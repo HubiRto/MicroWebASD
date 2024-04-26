@@ -7,11 +7,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import pl.pomoku.authservice.dto.response.ErrorResponse;
 import pl.pomoku.authservice.exception.AppException;
 
+import java.time.LocalDateTime;
+
 @ControllerAdvice
 public class AppExceptionHandler {
     @ExceptionHandler(value = {AppException.class})
     @ResponseBody
     public ResponseEntity<ErrorResponse> handleExceptions(AppException ex) {
-        return ResponseEntity.status(ex.getHttpStatus()).body(new ErrorResponse(ex.getMessage()));
+        return ResponseEntity.status(ex.getHttpStatus()).body(new ErrorResponse(LocalDateTime.now(), ex.getMessage()));
     }
 }

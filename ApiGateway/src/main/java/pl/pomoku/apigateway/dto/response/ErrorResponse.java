@@ -1,4 +1,6 @@
 package pl.pomoku.apigateway.dto.response;
 
-public record ErrorResponse(String message) {
+import java.time.LocalDateTime;
+
+public record ErrorResponse(String message, LocalDateTime timestamp) {
 }

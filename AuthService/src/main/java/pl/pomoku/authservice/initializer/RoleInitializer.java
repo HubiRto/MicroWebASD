@@ -1,4 +1,4 @@
-package pl.pomoku.authservice.config;
+package pl.pomoku.authservice.initializer;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;

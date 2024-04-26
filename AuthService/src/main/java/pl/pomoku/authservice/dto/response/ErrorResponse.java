@@ -1,4 +1,6 @@
 package pl.pomoku.authservice.dto.response;
 
-public record ErrorResponse(String message) {
+import java.time.LocalDateTime;
+
+public record ErrorResponse(LocalDateTime timestamp, String message) {
 }

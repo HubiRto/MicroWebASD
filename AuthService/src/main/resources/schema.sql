@@ -1,5 +1,6 @@
 CREATE SEQUENCE IF NOT EXISTS user_seq START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE IF NOT EXISTS role_seq START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE IF NOT EXISTS token_seq START WITH 1 INCREMENT BY 1;
 
 CREATE TABLE IF NOT EXISTS users
 (
@@ -24,6 +25,18 @@ CREATE TABLE IF NOT EXISTS user_roles
     PRIMARY KEY (user_id, role_id),
     FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE,
     FOREIGN KEY (role_id) REFERENCES roles (id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS tokens
+(
+    id         BIGINT       NOT NULL DEFAULT nextval('token_seq'),
+    token      VARCHAR(255) NOT NULL UNIQUE,
+    token_type VARCHAR(50)  NOT NULL,
+    revoked    BOOLEAN      NOT NULL DEFAULT FALSE,
+    expired    BOOLEAN      NOT NULL DEFAULT FALSE,
+    user_id    BIGINT       NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
 );
 
 CREATE INDEX IF NOT EXISTS idx_user_email ON users (email);

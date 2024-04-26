@@ -38,7 +38,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User getByEmial(String email) {
+    public User getByEmail(String email) {
         return repository.findByEmail(email).orElseThrow(() -> new AppException(
                 String.format("Nie ma użytkownika o mailu: %s", email),
                 HttpStatus.NOT_FOUND

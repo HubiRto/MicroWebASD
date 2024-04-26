@@ -6,5 +6,5 @@ import pl.pomoku.authservice.entity.User;
 public interface UserService {
     void create(RegisterUserRequest request);
     void delete(Long id);
-    User getByEmial(String email);
+    User getByEmail(String email);
 }
