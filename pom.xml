@@ -26,6 +26,7 @@
         <module>AuthService</module>
         <module>ApiGateway</module>
         <module>DiscoveryServer</module>
+        <module>AlgorithmService</module>
     </modules>
 
     <parent>
