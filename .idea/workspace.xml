@@ -4,45 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Add repositories">
-      <change afterPath="$PROJECT_DIR$/ApiGateway/src/main/java/pl/pomoku/apigateway/dto/response/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiGateway/src/main/java/pl/pomoku/apigateway/exception/AppException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiGateway/src/main/java/pl/pomoku/apigateway/filter/AuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiGateway/src/main/java/pl/pomoku/apigateway/filter/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiGateway/src/main/java/pl/pomoku/apigateway/filter/RouteValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiGateway/src/main/java/pl/pomoku/apigateway/handler/AppExceptionHandler.java" afterDir="false" />
+    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Finish Api Gateway">
+      <change afterPath="$PROJECT_DIR$/ApiGateway/src/main/java/pl/pomoku/apigateway/dto/response/IsValidResposne.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/config/AuthConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/config/RoleInitializer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/config/SecurityConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/controller/AuthController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/dto/request/LoginRequest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/dto/request/RegisterUserRequest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/dto/response/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/dto/response/IsValidResposne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/entity/User.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/exception/AppException.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/handler/AppExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/repository/UserRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/AuthService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/JwtService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/UserService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/resources/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseService/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseService/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseService/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseService/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseService/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseService/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseService/src/main/java/pl/pomoku/useservice/UseServiceApplication.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UseService/src/main/java/pl/pomoku/useservice/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseService/src/main/java/pl/pomoku/useservice/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UseService/src/main/java/pl/pomoku/useservice/entity/User.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UseService/src/main/java/pl/pomoku/useservice/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/repository/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseService/src/main/java/pl/pomoku/useservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseService/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseService/src/main/resources/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseService/src/test/java/pl/pomoku/useservice/UseServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UseService/src/main/java/pl/pomoku/useservice/repository/UserRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,38 +72,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.UseService: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.MicroWebASD [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.UseServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hubert/IdeaProjects/MicroWebASD/ApiGateway/src/main/java/pl/pomoku/apigateway&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.UseService: Compose Deployment.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.MicroWebASD [clean,install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.AuthServiceApplication.executor": "Run",
+    "Spring Boot.DiscoveryServerApplication.executor": "Run",
+    "Spring Boot.UseServiceApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Hubert/IdeaProjects/MicroWebASD/ApiGateway/src/main/java/pl/pomoku/apigateway",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\ApiGateway\src\main\java\pl\pomoku\apigateway" />
@@ -125,6 +116,7 @@
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\UseService" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.pomoku.apigateway.dto.response" />
       <recent name="pl.pomoku.useservice.repository" />
     </key>
   </component>
@@ -137,7 +129,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UseServiceApplication">
+  <component name="RunManager" selected="Spring Boot.DiscoveryServerApplication">
     <configuration name="MicroWebASD [clean,install]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -176,13 +168,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="AuthConfig" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.pomoku.authconfig.AuthConfigApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="AuthService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.pomoku.authservice.AuthServiceApplication" />
@@ -190,9 +175,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UseServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="UseService" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.pomoku.useservice.UseServiceApplication" />
+    <configuration name="DiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="DiscoveryServer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.pomoku.discoveryserver.DiscoveryServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -229,6 +214,7 @@
       <workItem from="1714112658178" duration="525000" />
       <workItem from="1714113246248" duration="11559000" />
       <workItem from="1714145048989" duration="38000" />
+      <workItem from="1714149437866" duration="3947000" />
     </task>
     <task id="LOCAL-00001" summary="Start work with UserService">
       <option name="closed" value="true" />
@@ -246,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714116181445</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finish Api Gateway">
+      <option name="closed" value="true" />
+      <created>1714151253196</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714151253196</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +260,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start work with UserService" />
     <MESSAGE value="Add repositories" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add repositories" />
+    <MESSAGE value="Finish Api Gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Api Gateway" />
   </component>
 </project>
