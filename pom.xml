@@ -23,7 +23,8 @@
     </properties>
 
     <modules>
-        <module>UseService</module>
+        <module>AuthService</module>
+        <module>ApiGateway</module>
     </modules>
 
     <parent>
