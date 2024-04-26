@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Capturing invalid jwt token structure dont work">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/dto/response/LoginResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/entity/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/enumerated/TokenType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/repository/TokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/impl/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/822b3a87-2475-47c5-b6b5-d59d7f5c9c60.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/822b3a87-2475-47c5-b6b5-d59d7f5c9c60.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/822b3a87-2475-47c5-b6b5-d59d7f5c9c60/storage_v2/_src_/database/db.fgwAAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/822b3a87-2475-47c5-b6b5-d59d7f5c9c60/storage_v2/_src_/database/db.fgwAAA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiGateway/src/main/java/pl/pomoku/apigateway/dto/response/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateway/src/main/java/pl/pomoku/apigateway/dto/response/ErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiGateway/src/main/java/pl/pomoku/apigateway/filter/RouteValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateway/src/main/java/pl/pomoku/apigateway/filter/RouteValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiGateway/src/main/java/pl/pomoku/apigateway/handler/AppExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateway/src/main/java/pl/pomoku/apigateway/handler/AppExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/config/RoleInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/initializer/RoleInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/dto/response/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/dto/response/ErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/handler/AppExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/handler/AppExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/JwtService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/schema.sql" afterDir="false" />
-    </list>
+    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Start Algorithm Service" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,6 +135,13 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="AlgorithmServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="AlgorithmService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.pomoku.algorithmservice.AlgorithmServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ApiGateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.pomoku.apigateway.ApiGatewayApplication" />
@@ -200,6 +183,7 @@
     <list>
       <item itemvalue="Docker.UseService: Compose Deployment" />
       <item itemvalue="Maven.MicroWebASD [clean,install]" />
+      <item itemvalue="Spring Boot.AlgorithmServiceApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.DiscoveryServerApplication" />
@@ -223,7 +207,7 @@
       <workItem from="1714113246248" duration="11559000" />
       <workItem from="1714145048989" duration="38000" />
       <workItem from="1714149437866" duration="5647000" />
-      <workItem from="1714155099783" duration="4767000" />
+      <workItem from="1714155099783" duration="5086000" />
     </task>
     <task id="LOCAL-00001" summary="Start work with UserService">
       <option name="closed" value="true" />
@@ -273,7 +257,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714154407668</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Code refactor">
+      <option name="closed" value="true" />
+      <created>1714160488679</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714160488680</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Start Algorithm Service">
+      <option name="closed" value="true" />
+      <created>1714160773042</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1714160773042</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +297,9 @@
     <MESSAGE value="Initial login completed for now (Eureka Server + Api Gateway + Auth Service)" />
     <MESSAGE value="Capturing invalid jwt token structure" />
     <MESSAGE value="Capturing invalid jwt token structure dont work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Capturing invalid jwt token structure dont work" />
+    <MESSAGE value="Code refactor" />
+    <MESSAGE value="Start Algorithm Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start Algorithm Service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

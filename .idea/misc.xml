@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/AuthConfig/pom.xml" />
         <option value="$PROJECT_DIR$/AuthService/pom.xml" />
         <option value="$PROJECT_DIR$/DiscoveryServer/pom.xml" />
+        <option value="$PROJECT_DIR$/AlgorithmService/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
