@@ -4,34 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Finish Api Gateway">
-      <change afterPath="$PROJECT_DIR$/ApiGateway/src/main/java/pl/pomoku/apigateway/dto/response/IsValidResposne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/config/AuthConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/config/RoleInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/dto/request/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/dto/request/RegisterUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/dto/response/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/dto/response/IsValidResposne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/exception/AppException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/handler/AppExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseService/src/main/java/pl/pomoku/useservice/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseService/src/main/java/pl/pomoku/useservice/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseService/src/main/java/pl/pomoku/useservice/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/repository/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseService/src/main/java/pl/pomoku/useservice/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Capturing invalid jwt token structure">
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/JwtService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,6 +170,13 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Docker.UseService: Compose Deployment" />
+      <item itemvalue="Maven.MicroWebASD [clean,install]" />
+      <item itemvalue="Spring Boot.AuthServiceApplication" />
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
+      <item itemvalue="Spring Boot.DiscoveryServerApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Docker.UseService: Compose Deployment" />
@@ -214,7 +195,7 @@
       <workItem from="1714112658178" duration="525000" />
       <workItem from="1714113246248" duration="11559000" />
       <workItem from="1714145048989" duration="38000" />
-      <workItem from="1714149437866" duration="3947000" />
+      <workItem from="1714149437866" duration="4680000" />
     </task>
     <task id="LOCAL-00001" summary="Start work with UserService">
       <option name="closed" value="true" />
@@ -240,7 +221,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714151253196</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial login completed for now (Eureka Server + Api Gateway + Auth Service)">
+      <option name="closed" value="true" />
+      <created>1714153687985</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714153687985</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Capturing invalid jwt token structure">
+      <option name="closed" value="true" />
+      <created>1714153966654</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714153966654</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +258,8 @@
     <MESSAGE value="Start work with UserService" />
     <MESSAGE value="Add repositories" />
     <MESSAGE value="Finish Api Gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish Api Gateway" />
+    <MESSAGE value="Initial login completed for now (Eureka Server + Api Gateway + Auth Service)" />
+    <MESSAGE value="Capturing invalid jwt token structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Capturing invalid jwt token structure" />
   </component>
 </project>
