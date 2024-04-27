@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: ALGORITHM-SERVICE
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc.lob.non_contextual_creation: true
+  data:
+    mongodb:
+      username: user
+      password: password
+      host: localhost
+      port: 27017
+      authentication-database: admin
+      database: db
+#  sql:
+#    init:
+#      mode: always
+#      schema-locations: classpath:schema.sql
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone : http://localhost:8761/eureka/
+server:
+  port: 8787

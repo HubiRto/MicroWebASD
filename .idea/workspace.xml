@@ -4,7 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Start Algorithm Service" />
+    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Add README.md">
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/BinSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/annotations/NotEmptyArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/annotations/NotNullArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/annotations/SortedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/AlgorithmController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/BinSearchInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/BinSearchOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/response/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/binSearch/BinSearchEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/exception/AppException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/handler/AppExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/BinSearchRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/BinSearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/ArrayUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/HashUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/NotEmptyArrayValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/NotNullArrayValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/SortedArrayValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/ValidationOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/resources/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/822b3a87-2475-47c5-b6b5-d59d7f5c9c60.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/822b3a87-2475-47c5-b6b5-d59d7f5c9c60.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c43efbab-b757-4eb4-a1ef-319a4560de90.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c43efbab-b757-4eb4-a1ef-319a4560de90.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/AlgorithmServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/AlgorithmServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +47,7 @@
       <list>
         <option value="Record" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -47,7 +80,12 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.BinSearch.executor&quot;: &quot;Run&quot;,
     &quot;Docker.UseService: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.mongo-express: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.mongodb: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
     &quot;Maven.MicroWebASD [clean,install].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
@@ -57,6 +95,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AlgorithmServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.AuthServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.DiscoveryServerApplication.executor&quot;: &quot;Run&quot;,
@@ -65,7 +104,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hubert/IdeaProjects/MicroWebASD/ApiGateway/src/main/java/pl/pomoku/apigateway&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hubert/IdeaProjects/MicroWebASD/AlgorithmService/src/main/java/pl/pomoku/algorithmservice&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -77,12 +116,18 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+      &quot;postgresql&quot;,
+      &quot;mongo&quot;
     ]
   }
 }</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\AlgorithmService\src\main\java\pl\pomoku\algorithmservice" />
+      <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\AlgorithmService\src\main\resources" />
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\ApiGateway\src\main\java\pl\pomoku\apigateway" />
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\AuthService\src\main\java\pl\pomoku\authservice" />
     </key>
@@ -90,8 +135,11 @@
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\UseService" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="pl.pomoku.apigateway.dto.response" />
-      <recent name="pl.pomoku.useservice.repository" />
+      <recent name="pl.pomoku.algorithmservice.validators" />
+      <recent name="pl.pomoku.algorithmservice.annotations" />
+      <recent name="pl.pomoku.algorithmservice.exception" />
+      <recent name="pl.pomoku.algorithmservice.dto.response" />
+      <recent name="pl.pomoku.algorithmservice.dto.request" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -103,7 +151,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthServiceApplication">
+  <component name="RunManager" selected="Spring Boot.AlgorithmServiceApplication">
     <configuration name="MicroWebASD [clean,install]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -166,22 +214,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UseService: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="UseService/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.mongo-express: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mongo-express" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.mongodb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mongodb" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="postgres" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Docker.UseService: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.mongo-express: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.mongodb: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Maven.MicroWebASD [clean,install]" />
       <item itemvalue="Spring Boot.AlgorithmServiceApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
@@ -190,7 +280,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.UseService: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.mongodb: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.mongo-express: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Maven.MicroWebASD [clean,install]" />
       </list>
     </recent_temporary>
@@ -207,7 +300,9 @@
       <workItem from="1714113246248" duration="11559000" />
       <workItem from="1714145048989" duration="38000" />
       <workItem from="1714149437866" duration="5647000" />
-      <workItem from="1714155099783" duration="5086000" />
+      <workItem from="1714155099783" duration="5588000" />
+      <workItem from="1714197804343" duration="23687000" />
+      <workItem from="1714258309605" duration="3642000" />
     </task>
     <task id="LOCAL-00001" summary="Start work with UserService">
       <option name="closed" value="true" />
@@ -273,7 +368,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714160773042</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add README.md">
+      <option name="closed" value="true" />
+      <created>1714160812570</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1714160812570</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +402,8 @@
     <MESSAGE value="Capturing invalid jwt token structure dont work" />
     <MESSAGE value="Code refactor" />
     <MESSAGE value="Start Algorithm Service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start Algorithm Service" />
+    <MESSAGE value="Add README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add README.md" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
