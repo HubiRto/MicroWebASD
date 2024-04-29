@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import pl.pomoku.algorithmservice.algorithm.BinSearch;
 import pl.pomoku.algorithmservice.dto.input.BinSearchInput;
 import pl.pomoku.algorithmservice.dto.output.BinSearchOutput;
-import pl.pomoku.algorithmservice.entity.binSearch.BinSearchEntity;
+import pl.pomoku.algorithmservice.entity.BinSearchEntity;
 import pl.pomoku.algorithmservice.repository.BinSearchRepository;
 import pl.pomoku.algorithmservice.utils.HashUtils;
 

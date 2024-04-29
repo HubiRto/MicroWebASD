@@ -1,5 +1,9 @@
 package pl.pomoku.algorithmservice.utils;
 
+import java.util.Arrays;
+
+import static com.mongodb.assertions.Assertions.assertFalse;
+
 public class ArrayUtils {
     public static boolean isSorted(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
@@ -14,5 +18,9 @@ public class ArrayUtils {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
+    }
+
+    public static void assertArrayNotEquals(int[] arr1, int[] arr2) {
+        assertFalse(Arrays.equals(arr1, arr2));
     }
 }

@@ -4,24 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Add test to BinSearch">
+    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Finish Partition Algorithm">
       <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/HoarePartition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/Partition.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/HoarePartitionInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/PartitonInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/PartitionOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/binSearch/PartitionEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/PartitionState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/PartitionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/PartitionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/BinarySearchAlgorithmTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/PartitionAlgorithmTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/HoarePartitionOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/HoarePartitionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/HoarePartitionStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/HoarePartitionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/HoarePartitionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/HoarePartitionAlgorithmTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/BinSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/BinSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/AlgorithmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/AlgorithmController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/handler/AppExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/handler/AppExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/binSearch/BinSearchEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/BinSearchEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/binSearch/PartitionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/PartitionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/BinSearchRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/BinSearchRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/PartitionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/PartitionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/BinSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/BinSearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/PartitionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/PartitionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/ArrayUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/ArrayUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/controller/AlgorithmControllerTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +67,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.BinSearch.executor": "Run",
+    "Application.HoarePartition.executor": "Run",
     "Application.Partition.executor": "Run",
     "Docker.UseService: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.mongo-express: Compose Deployment.executor": "Run",
@@ -78,6 +79,8 @@
     "JUnit.BinarySearchAlgorithmTest.binSerachResultTest4.executor": "Run",
     "JUnit.BinarySearchAlgorithmTest.binSerachTest1.executor": "Run",
     "JUnit.BinarySearchAlgorithmTest.executor": "Run",
+    "JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest1.executor": "Run",
+    "JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest2.executor": "Run",
     "JUnit.PartitionAlgorithmTest (1).executor": "Run",
     "JUnit.PartitionAlgorithmTest.binSerachResultTest1.executor": "Run",
     "JUnit.PartitionAlgorithmTest.executor": "Run",
@@ -148,11 +151,11 @@
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\UseService" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="pl.pomoku.algorithmservice.dto.input" />
       <recent name="pl.pomoku.algorithmservice.service" />
       <recent name="pl.pomoku.algorithmservice.repository" />
-      <recent name="pl.pomoku.algorithmservice.controller" />
       <recent name="pl.pomoku.algorithmservice.algorithm" />
+      <recent name="pl.pomoku.algorithmservice.dto.input" />
+      <recent name="pl.pomoku.algorithmservice.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -164,7 +167,52 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AlgorithmServiceApplication">
+  <component name="RunManager" selected="JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest2">
+    <configuration name="HoarePartition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.HoarePartition" />
+      <module name="AlgorithmService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HoarePartitionAlgorithmTest.hoarePartitionResultTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AlgorithmService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.HoarePartitionAlgorithmTest" />
+      <option name="METHOD_NAME" value="hoarePartitionResultTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HoarePartitionAlgorithmTest.hoarePartitionResultTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AlgorithmService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.HoarePartitionAlgorithmTest" />
+      <option name="METHOD_NAME" value="hoarePartitionResultTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PartitionAlgorithmTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmService" />
       <extension name="coverage">
@@ -176,54 +224,6 @@
       <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
       <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.PartitionAlgorithmTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PartitionAlgorithmTest.partitionResultTest13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AlgorithmService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.PartitionAlgorithmTest" />
-      <option name="METHOD_NAME" value="partitionResultTest13" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PartitionAlgorithmTest.partitionResultTest14" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AlgorithmService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.PartitionAlgorithmTest" />
-      <option name="METHOD_NAME" value="partitionResultTest14" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PartitionAlgorithmTest.partitionResultTest15" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AlgorithmService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.PartitionAlgorithmTest" />
-      <option name="METHOD_NAME" value="partitionResultTest15" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -282,10 +282,10 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.HoarePartition" />
+      <item itemvalue="JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest1" />
+      <item itemvalue="JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest2" />
       <item itemvalue="JUnit.PartitionAlgorithmTest" />
-      <item itemvalue="JUnit.PartitionAlgorithmTest.partitionResultTest13" />
-      <item itemvalue="JUnit.PartitionAlgorithmTest.partitionResultTest14" />
-      <item itemvalue="JUnit.PartitionAlgorithmTest.partitionResultTest15" />
       <item itemvalue="JUnit.PartitionAlgorithmTest.partitionResultTest16" />
       <item itemvalue="Spring Boot.AlgorithmServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
@@ -294,11 +294,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest2" />
+        <item itemvalue="JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest1" />
+        <item itemvalue="Application.HoarePartition" />
         <item itemvalue="JUnit.PartitionAlgorithmTest" />
         <item itemvalue="JUnit.PartitionAlgorithmTest.partitionResultTest16" />
-        <item itemvalue="JUnit.PartitionAlgorithmTest.partitionResultTest15" />
-        <item itemvalue="JUnit.PartitionAlgorithmTest.partitionResultTest14" />
-        <item itemvalue="JUnit.PartitionAlgorithmTest.partitionResultTest13" />
       </list>
     </recent_temporary>
   </component>
@@ -321,7 +321,7 @@
       <workItem from="1714298477633" duration="3851000" />
       <workItem from="1714304588343" duration="2000" />
       <workItem from="1714310476848" duration="638000" />
-      <workItem from="1714393769749" duration="9798000" />
+      <workItem from="1714393769749" duration="18341000" />
     </task>
     <task id="LOCAL-00001" summary="Start work with UserService">
       <option name="closed" value="true" />
@@ -411,7 +411,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714298627681</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Finish Partition Algorithm">
+      <option name="closed" value="true" />
+      <created>1714404208359</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1714404208359</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,7 +448,8 @@
     <MESSAGE value="Add README.md" />
     <MESSAGE value="Finish BinSearch" />
     <MESSAGE value="Add test to BinSearch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add test to BinSearch" />
+    <MESSAGE value="Finish Partition Algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Partition Algorithm" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
