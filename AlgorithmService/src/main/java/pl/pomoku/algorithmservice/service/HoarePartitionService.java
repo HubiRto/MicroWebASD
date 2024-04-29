@@ -15,7 +15,7 @@ public class HoarePartitionService {
     private final HoarePartitionRepository repository;
 
     public HoarePartitionOutput getResult(HoarePartitionInput input) {
-        int hash = HashUtils.hash(input.getArr());
+        int hash = HashUtils.hash(input.getArr(), input.getK());
         return repository.findByHash(hash)
                 .map(HoarePartitionEntity::getOutput)
                 .orElseGet(() -> {

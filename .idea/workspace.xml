@@ -4,24 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Finish Partition Algorithm">
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/HoarePartition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/HoarePartitionInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/HoarePartitionOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/HoarePartitionEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/HoarePartitionStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/HoarePartitionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/HoarePartitionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/HoarePartitionAlgorithmTest.java" afterDir="false" />
+    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Finish HoarePartition Algorithm">
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/response/CalculateResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/AlgorithmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/AlgorithmController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/binSearch/BinSearchEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/BinSearchEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/binSearch/PartitionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/PartitionEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/BinSearchRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/BinSearchRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/PartitionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/PartitionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/BinSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/BinSearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/PartitionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/PartitionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/ArrayUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/ArrayUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/HoarePartitionInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/HoarePartitionInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/HoarePartitionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/HoarePartitionService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +155,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest2">
+  <component name="RunManager" selected="Spring Boot.AlgorithmServiceApplication">
     <configuration name="HoarePartition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.HoarePartition" />
       <module name="AlgorithmService" />
@@ -321,7 +309,7 @@
       <workItem from="1714298477633" duration="3851000" />
       <workItem from="1714304588343" duration="2000" />
       <workItem from="1714310476848" duration="638000" />
-      <workItem from="1714393769749" duration="18341000" />
+      <workItem from="1714393769749" duration="19673000" />
     </task>
     <task id="LOCAL-00001" summary="Start work with UserService">
       <option name="closed" value="true" />
@@ -419,7 +407,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714404208359</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Finish HoarePartition Algorithm">
+      <option name="closed" value="true" />
+      <created>1714423702429</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1714423702429</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +445,8 @@
     <MESSAGE value="Finish BinSearch" />
     <MESSAGE value="Add test to BinSearch" />
     <MESSAGE value="Finish Partition Algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish Partition Algorithm" />
+    <MESSAGE value="Finish HoarePartition Algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish HoarePartition Algorithm" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
