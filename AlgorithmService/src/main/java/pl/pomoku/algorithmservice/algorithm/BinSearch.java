@@ -30,7 +30,7 @@ public class BinSearch {
         return new BinSearchOutput(mIndices, comparisonsCount, -1);
     }
 
-    public static BinSearchOutput calculate(BinSearchInput request) {
-        return calculate(request.getArr(), request.getX());
+    public static BinSearchOutput calculate(BinSearchInput input) {
+        return calculate(input.getArr(), input.getX());
     }
 }
