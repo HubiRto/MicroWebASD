@@ -3,6 +3,7 @@ package pl.pomoku.algorithmservice.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import pl.pomoku.algorithmservice.algorithm.BinSearch;
+import pl.pomoku.algorithmservice.annotations.MeasureCalculationTime;
 import pl.pomoku.algorithmservice.dto.input.BinSearchInput;
 import pl.pomoku.algorithmservice.dto.output.BinSearchOutput;
 import pl.pomoku.algorithmservice.entity.BinSearchEntity;
@@ -14,6 +15,7 @@ import pl.pomoku.algorithmservice.utils.HashUtils;
 public class BinSearchService {
     private final BinSearchRepository repository;
 
+    @MeasureCalculationTime
     public BinSearchOutput getResult(BinSearchInput input) {
         int hash = HashUtils.hash(input.getArr(), input.getX());
         return repository.findByHash(hash)

@@ -3,6 +3,7 @@ package pl.pomoku.algorithmservice.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import pl.pomoku.algorithmservice.algorithm.Partition;
+import pl.pomoku.algorithmservice.annotations.MeasureCalculationTime;
 import pl.pomoku.algorithmservice.dto.input.PartitionInput;
 import pl.pomoku.algorithmservice.dto.output.PartitionOutput;
 import pl.pomoku.algorithmservice.entity.PartitionEntity;
@@ -14,6 +15,7 @@ import pl.pomoku.algorithmservice.utils.HashUtils;
 public class PartitionService {
     private final PartitionRepository repository;
 
+    @MeasureCalculationTime
     public PartitionOutput getResult(PartitionInput input) {
         int hash = HashUtils.hash(input.getArr());
         return repository.findByHash(hash)

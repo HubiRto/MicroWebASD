@@ -1,19 +1,18 @@
 package pl.pomoku.algorithmservice.dto.output;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
+import pl.pomoku.algorithmservice.model.AbstractCalculationTime;
 import pl.pomoku.algorithmservice.model.HoarePartitionStep;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
 @ToString
-public class HoarePartitionOutput {
+public class HoarePartitionOutput extends AbstractCalculationTime<HoarePartitionOutput> {
     private int result;
     private int depth = 0;
     private List<HoarePartitionStep> steps = new ArrayList<>();
@@ -21,5 +20,10 @@ public class HoarePartitionOutput {
 
     public void addStep(HoarePartitionStep step) {
         this.steps.add(step);
+    }
+
+    @Override
+    protected HoarePartitionOutput getOutput() {
+        return this;
     }
 }
