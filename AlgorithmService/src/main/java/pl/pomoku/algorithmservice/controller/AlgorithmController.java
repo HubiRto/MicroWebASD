@@ -36,6 +36,4 @@ public class AlgorithmController {
     public ResponseEntity<?> hoarePartition(@Valid @RequestBody HoarePartitionInput input) {
         return ResponseEntity.ok(hoarePartitionService.getResult(input).getResponse());
     }
-
-
 }

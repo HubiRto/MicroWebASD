@@ -4,20 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Basic page">
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/AbstractCalculationTime.java" afterDir="false" />
+    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Add HoarePartition to frontend + add custom advice AOP to measure calculation time">
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/SortersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/MergeSortInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/MergeSortOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/MergeSortEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/MergeSortStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/MergeSortRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/MergeSortService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/annotations/Testt.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/annotations/MeasureCalculationTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/AlgorithmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/AlgorithmController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/BinSearchOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/BinSearchOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/HoarePartitionOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/HoarePartitionOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/PartitionOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/PartitionOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/handler/TestAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/handler/CalculationTimeAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/BinSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/BinSearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/HoarePartitionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/HoarePartitionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/PartitionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/PartitionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/BinarySearchAlgorithmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/BinarySearchAlgorithmTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/PartitionAlgorithmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/PartitionAlgorithmTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +65,7 @@
   "keyToString": {
     "Application.BinSearch.executor": "Run",
     "Application.HoarePartition.executor": "Run",
+    "Application.MergeSort.executor": "Run",
     "Application.Partition.executor": "Run",
     "Docker.UseService: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.mongo-express: Compose Deployment.executor": "Run",
@@ -115,6 +113,7 @@
     "Spring Boot.AuthServiceApplication.executor": "Run",
     "Spring Boot.DiscoveryServerApplication.executor": "Run",
     "Spring Boot.UseServiceApplication.executor": "Run",
+    "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "17",
@@ -156,9 +155,9 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="pl.pomoku.algorithmservice.service" />
       <recent name="pl.pomoku.algorithmservice.repository" />
-      <recent name="pl.pomoku.algorithmservice.algorithm" />
       <recent name="pl.pomoku.algorithmservice.dto.input" />
-      <recent name="pl.pomoku.algorithmservice.controller" />
+      <recent name="pl.pomoku.algorithmservice.entity" />
+      <recent name="pl.pomoku.algorithmservice.algorithm" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -171,19 +170,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.AlgorithmServiceApplication">
-    <configuration name="HoarePartition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.HoarePartition" />
-      <module name="AlgorithmService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BinarySearchAlgorithmTest.binSerachResultTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmService" />
       <extension name="coverage">
@@ -301,7 +287,6 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.HoarePartition" />
       <item itemvalue="JUnit.BinarySearchAlgorithmTest.binSerachResultTest1" />
       <item itemvalue="JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest1" />
       <item itemvalue="JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest2" />
@@ -317,7 +302,6 @@
         <item itemvalue="JUnit.BinarySearchAlgorithmTest.binSerachResultTest1" />
         <item itemvalue="JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest2" />
         <item itemvalue="JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest1" />
-        <item itemvalue="Application.HoarePartition" />
       </list>
     </recent_temporary>
   </component>
@@ -340,7 +324,7 @@
       <workItem from="1714298477633" duration="3851000" />
       <workItem from="1714304588343" duration="2000" />
       <workItem from="1714310476848" duration="638000" />
-      <workItem from="1714393769749" duration="55329000" />
+      <workItem from="1714393769749" duration="60811000" />
     </task>
     <task id="LOCAL-00001" summary="Start work with UserService">
       <option name="closed" value="true" />
@@ -462,7 +446,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714598727380</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Add HoarePartition to frontend + add custom advice AOP to measure calculation time">
+      <option name="closed" value="true" />
+      <created>1714601197307</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1714601197307</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +487,8 @@
     <MESSAGE value="Finish HoarePartition Algorithm" />
     <MESSAGE value="New type of response" />
     <MESSAGE value="Basic page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic page" />
+    <MESSAGE value="Add HoarePartition to frontend + add custom advice AOP to measure calculation time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add HoarePartition to frontend + add custom advice AOP to measure calculation time" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
