@@ -7,6 +7,7 @@ import pl.pomoku.algorithmservice.dto.output.PartitionOutput;
 import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static pl.pomoku.algorithmservice.utils.ArrayUtils.assertArrayNotEquals;
 
 public class PartitionAlgorithmTest {
 
@@ -185,9 +186,5 @@ public class PartitionAlgorithmTest {
         assertNotEquals(output.states().get(3 - 1).getR(), 8);
         assertNotEquals(output.states().get(4 - 1).getL(), 5);
         assertEquals(output.states().get(4 - 1).getL(), 4);
-    }
-
-    private void assertArrayNotEquals(int[] arr1, int[] arr2) {
-        assertFalse(Arrays.equals(arr1, arr2));
     }
 }

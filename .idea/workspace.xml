@@ -4,12 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Finish HoarePartition Algorithm">
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/response/CalculateResponse.java" afterDir="false" />
+    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Basic page">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/annotations/Testt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/handler/TestAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/algorithm-component/algorithm-component.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/bin-search/bin-search.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/bin-search/bin-search.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/partition/partition.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/partition/partition.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/interface/algorithm-input.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/model/bin-search-output.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/model/calculate-response.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/model/partition-output.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/model/partition-state.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.spec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/AlgorithmServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/AlgorithmServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/AlgorithmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/AlgorithmController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/HoarePartitionInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/HoarePartitionInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/HoarePartitionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/HoarePartitionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/PartitionAlgorithmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/PartitionAlgorithmTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,14 +54,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;contexts&quot;: [
@@ -42,6 +77,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -63,6 +101,7 @@
     "Docker.docker-compose.yml.postgres: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
     "JUnit.AlgorithmControllerTest.executor": "Run",
+    "JUnit.BinarySearchAlgorithmTest.binSerachResultTest1.executor": "Run",
     "JUnit.BinarySearchAlgorithmTest.binSerachResultTest3.executor": "Run",
     "JUnit.BinarySearchAlgorithmTest.binSerachResultTest4.executor": "Run",
     "JUnit.BinarySearchAlgorithmTest.binSerachTest1.executor": "Run",
@@ -106,7 +145,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Hubert/IdeaProjects/MicroWebASD/AlgorithmService/src/main/resources/images",
+    "last_opened_file_path": "C:/Users/Hubert/IdeaProjects/MicroWebASD/frontend/src/app/model",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -114,6 +153,7 @@
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "editor.preferences.appearance",
+    "ts.external.directory.path": "C:\\Users\\Hubert\\IdeaProjects\\MicroWebASD\\frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -128,13 +168,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\AlgorithmService\src\main\resources\images" />
+      <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\frontend\src\app\model" />
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\AlgorithmService\src\main\java\pl\pomoku\algorithmservice" />
+      <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\AlgorithmService\src\main\resources\images" />
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\AlgorithmService\src\main\resources" />
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\ApiGateway\src\main\java\pl\pomoku\apigateway" />
-      <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\AuthService\src\main\java\pl\pomoku\authservice" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\frontend\src\app\components\app" />
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\AlgorithmService\src\main\java\pl\pomoku\algorithmservice" />
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\UseService" />
     </key>
@@ -165,6 +206,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchAlgorithmTest.binSerachResultTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AlgorithmService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.BinarySearchAlgorithmTest" />
+      <option name="METHOD_NAME" value="binSerachResultTest1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -201,36 +258,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PartitionAlgorithmTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AlgorithmService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.PartitionAlgorithmTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PartitionAlgorithmTest.partitionResultTest16" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AlgorithmService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.PartitionAlgorithmTest" />
-      <option name="METHOD_NAME" value="partitionResultTest16" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="MicroWebASD [clean,install]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="AlgorithmServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="AlgorithmService" />
@@ -271,10 +328,10 @@
     </configuration>
     <list>
       <item itemvalue="Application.HoarePartition" />
+      <item itemvalue="JUnit.BinarySearchAlgorithmTest.binSerachResultTest1" />
       <item itemvalue="JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest1" />
       <item itemvalue="JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest2" />
-      <item itemvalue="JUnit.PartitionAlgorithmTest" />
-      <item itemvalue="JUnit.PartitionAlgorithmTest.partitionResultTest16" />
+      <item itemvalue="Maven.MicroWebASD [clean,install]" />
       <item itemvalue="Spring Boot.AlgorithmServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
@@ -282,11 +339,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Maven.MicroWebASD [clean,install]" />
+        <item itemvalue="JUnit.BinarySearchAlgorithmTest.binSerachResultTest1" />
         <item itemvalue="JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest2" />
         <item itemvalue="JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest1" />
         <item itemvalue="Application.HoarePartition" />
-        <item itemvalue="JUnit.PartitionAlgorithmTest" />
-        <item itemvalue="JUnit.PartitionAlgorithmTest.partitionResultTest16" />
       </list>
     </recent_temporary>
   </component>
@@ -309,7 +366,7 @@
       <workItem from="1714298477633" duration="3851000" />
       <workItem from="1714304588343" duration="2000" />
       <workItem from="1714310476848" duration="638000" />
-      <workItem from="1714393769749" duration="19673000" />
+      <workItem from="1714393769749" duration="53026000" />
     </task>
     <task id="LOCAL-00001" summary="Start work with UserService">
       <option name="closed" value="true" />
@@ -415,7 +472,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714423702429</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="New type of response">
+      <option name="closed" value="true" />
+      <created>1714424886224</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1714424886224</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,7 +511,9 @@
     <MESSAGE value="Add test to BinSearch" />
     <MESSAGE value="Finish Partition Algorithm" />
     <MESSAGE value="Finish HoarePartition Algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish HoarePartition Algorithm" />
+    <MESSAGE value="New type of response" />
+    <MESSAGE value="Basic page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic page" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

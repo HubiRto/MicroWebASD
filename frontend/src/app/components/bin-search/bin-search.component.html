@@ -1,0 +1,27 @@
+<div class="mx-4 sm:mx-5 mt-5">
+  <h2 class="text-lg font-semibold text-white mb-3">Algorytm: Binary Search</h2>
+  <div class="max-w-2xl px-4 py-6 bg-gray-800 text-white rounded-lg shadow-lg">
+    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+      <input type="text" [(ngModel)]="arrayInput" placeholder="Wprowadź array [int]"
+             class="flex-grow p-2 border border-gray-300 rounded shadow-inner bg-gray-200 text-black">
+      <input type="number" [(ngModel)]="numberInput" placeholder="Wprowadź int"
+             class="p-2 border border-gray-300 rounded shadow-inner bg-gray-200 text-black" style="flex: 1 1 20%;">
+    </div>
+    <button (click)="processData()"
+            class="mt-4 w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+      Submit
+    </button>
+  </div>
+  <div class="mt-4 max-w-4xl px-4 py-6 bg-gray-800 text-white rounded-lg shadow-lg space-y-4"
+       *ngIf="result">
+    <div>
+      <p>Data obliczeń: {{ result.timestamp | date:'medium' }}</p>
+      <p>Czas obliczeń: {{ result.calculateTimeMilSec }} ms</p>
+    </div>
+    <div class="p-4 bg-gray-700 rounded shadow">
+      <p>Wynik: {{ result.data.result?.result }}</p>
+      <p>Liczba porównań: {{ result.data.result?.comparisonsCount }}</p>
+      <p>Przetworzona tablica: [{{ result.data.result?.mArr?.join(', ') }}]</p>
+    </div>
+  </div>
+</div>

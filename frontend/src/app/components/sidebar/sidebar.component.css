@@ -1,0 +1,27 @@
+:host ::ng-deep .overflow-y-auto::-webkit-scrollbar {
+  width: 8px;
+}
+
+:host ::ng-deep .overflow-y-auto::-webkit-scrollbar-track {
+  background: #2D3748;
+}
+
+:host ::ng-deep .overflow-y-auto::-webkit-scrollbar-thumb {
+  background: #4A5568;
+}
+
+:host ::ng-deep .overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background: #718096;
+}
+.sidebar {
+  transition: transform 0.3s ease-in-out;
+  z-index: 50;
+}
+
+.sidebar-hidden {
+  transform: translateX(-100%);
+}
+
+.sidebar-shown {
+  transform: translateX(0);
+}
