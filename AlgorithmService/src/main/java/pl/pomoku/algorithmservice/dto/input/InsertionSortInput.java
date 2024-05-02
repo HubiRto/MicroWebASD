@@ -1,7 +1,6 @@
 package pl.pomoku.algorithmservice.dto.input;
 
 import jakarta.validation.GroupSequence;
-import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,20 +16,10 @@ import pl.pomoku.algorithmservice.validators.ValidationOrder;
 @GroupSequence({
         ValidationOrder.First.class,
         ValidationOrder.Second.class,
-        HoarePartitionInput.class
+        InsertionSortInput.class
 })
-public class HoarePartitionInput {
+public class InsertionSortInput {
     @NotNullArray(groups = ValidationOrder.First.class)
     @NotEmptyArray(groups = ValidationOrder.Second.class)
     private int[] arr;
-    @NotNull(
-            groups = ValidationOrder.Second.class,
-            message = "HoarePartition requires a not-null k value."
-    )
-    @Min(
-            value = 0,
-            message = "k must be a non-negative integer.",
-            groups = ValidationOrder.Second.class
-    )
-    private Integer k;
 }

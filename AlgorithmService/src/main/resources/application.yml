@@ -22,6 +22,11 @@ spring:
       port: 27017
       authentication-database: admin
       database: db
+#  rabbitmq:
+#    host: localhost
+#    username: user
+#    password: password
+#    port: 5672
 #  sql:
 #    init:
 #      mode: always
