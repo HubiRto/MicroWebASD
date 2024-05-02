@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Finish Counting Sort in backend">
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/counting-sort/counting-sort.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/counting-sort/counting-sort.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/interface/counting-sort-output.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/insertion-sort/insertion-sort.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/insertion-sort/insertion-sort.component.html" afterDir="false" />
+    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Finish Counting Sort in frontend">
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/QuickSortPartition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/QuickSortPartitionInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/QuickSortPartitionOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/QuickSortPartitionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/QuickSortPartitionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/QuickSortPartitionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/QuickSortPartitionAlgorithmTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/SortersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/SortersController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +25,8 @@
       <list>
         <option value="Record" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -64,6 +68,7 @@
     "Application.InsertionSort.executor": "Run",
     "Application.MergeSort.executor": "Run",
     "Application.Partition.executor": "Run",
+    "Application.QuickSortPartition.executor": "Run",
     "Docker.UseService: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.mongo-express: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.mongodb: Compose Deployment.executor": "Run",
@@ -97,6 +102,12 @@
     "JUnit.PartitionAlgorithmTest.partitionResultTest7.executor": "Run",
     "JUnit.PartitionAlgorithmTest.partitionResultTest8.executor": "Run",
     "JUnit.PartitionAlgorithmTest.partitionResultTest9.executor": "Run",
+    "JUnit.QuickSortPartitionAlgorithmTest.executor": "Run",
+    "JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult1.executor": "Run",
+    "JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult2.executor": "Run",
+    "JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult3.executor": "Run",
+    "JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult4.executor": "Run",
+    "JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult5.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.MicroWebASD [clean,install].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -152,8 +163,8 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="pl.pomoku.algorithmservice.service" />
-      <recent name="pl.pomoku.algorithmservice.repository" />
       <recent name="pl.pomoku.algorithmservice.entity" />
+      <recent name="pl.pomoku.algorithmservice.algorithm" />
       <recent name="pl.pomoku.algorithmservice.dto.output" />
       <recent name="pl.pomoku.algorithmservice.dto.input" />
     </key>
@@ -168,7 +179,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.AlgorithmServiceApplication">
-    <configuration name="BinarySearchAlgorithmTest.binSerachResultTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuickSortPartitionAlgorithmTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmService" />
       <extension name="coverage">
         <pattern>
@@ -177,14 +188,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.BinarySearchAlgorithmTest" />
-      <option name="METHOD_NAME" value="binSerachResultTest1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.QuickSortPartitionAlgorithmTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HoarePartitionAlgorithmTest.hoarePartitionResultTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuickSortPartitionAlgorithmTest.quickSortPartitionResult2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmService" />
       <extension name="coverage">
         <pattern>
@@ -193,43 +203,60 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.HoarePartitionAlgorithmTest" />
-      <option name="METHOD_NAME" value="hoarePartitionResultTest2" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.QuickSortPartitionAlgorithmTest" />
+      <option name="METHOD_NAME" value="quickSortPartitionResult2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MicroWebASD [clean,install]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="cmdOptions" />
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="clean" />
-                <option value="install" />
-              </list>
-            </option>
-            <option name="multimoduleDir" />
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
+    <configuration name="QuickSortPartitionAlgorithmTest.quickSortPartitionResult3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AlgorithmService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.QuickSortPartitionAlgorithmTest" />
+      <option name="METHOD_NAME" value="quickSortPartitionResult3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickSortPartitionAlgorithmTest.quickSortPartitionResult4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AlgorithmService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.QuickSortPartitionAlgorithmTest" />
+      <option name="METHOD_NAME" value="quickSortPartitionResult4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickSortPartitionAlgorithmTest.quickSortPartitionResult5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AlgorithmService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.QuickSortPartitionAlgorithmTest" />
+      <option name="METHOD_NAME" value="quickSortPartitionResult5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="AlgorithmServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="AlgorithmService" />
@@ -268,24 +295,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.rabbitmq: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="rabbitmq" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
-      <item itemvalue="JUnit.BinarySearchAlgorithmTest.binSerachResultTest1" />
-      <item itemvalue="JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest2" />
-      <item itemvalue="Maven.MicroWebASD [clean,install]" />
+      <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest" />
+      <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult2" />
+      <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult3" />
+      <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult4" />
+      <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult5" />
       <item itemvalue="Spring Boot.AlgorithmServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
@@ -293,10 +308,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
-        <item itemvalue="Maven.MicroWebASD [clean,install]" />
-        <item itemvalue="JUnit.BinarySearchAlgorithmTest.binSerachResultTest1" />
-        <item itemvalue="JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest2" />
+        <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult5" />
+        <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult4" />
+        <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest" />
+        <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult3" />
+        <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult2" />
       </list>
     </recent_temporary>
   </component>
@@ -321,7 +337,7 @@
       <workItem from="1714310476848" duration="638000" />
       <workItem from="1714393769749" duration="63276000" />
       <workItem from="1714664192060" duration="3139000" />
-      <workItem from="1714671061145" duration="4909000" />
+      <workItem from="1714671061145" duration="13587000" />
     </task>
     <task id="LOCAL-00001" summary="Start work with UserService">
       <option name="closed" value="true" />
@@ -499,7 +515,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714676485590</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Finish Counting Sort in frontend">
+      <option name="closed" value="true" />
+      <created>1714677069258</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1714677069258</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +563,8 @@
     <MESSAGE value="Finish InsertionSort on backend" />
     <MESSAGE value="Create page for Insertion Sort" />
     <MESSAGE value="Finish Counting Sort in backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish Counting Sort in backend" />
+    <MESSAGE value="Finish Counting Sort in frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Counting Sort in frontend" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
