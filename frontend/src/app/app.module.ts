@@ -12,6 +12,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {PartitionComponent} from './components/partition/partition.component';
 import { AlgorithmComponentComponent } from './components/algorithm-component/algorithm-component.component';
 import { HoarePartitionComponent } from './components/hoare-partition/hoare-partition.component';
+import {MergeSortComponent} from "./components/merge-sort/merge-sort.component";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HoarePartitionComponent } from './components/hoare-partition/hoare-part
     SidebarComponent,
     BinSearchComponent,
     PartitionComponent,
-    HoarePartitionComponent
+    HoarePartitionComponent,
+    MergeSortComponent
   ],
   imports: [
     BrowserModule,

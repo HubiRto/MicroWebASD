@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Add HoarePartition to frontend + add custom advice AOP to measure calculation time">
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/SortersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/MergeSortInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/MergeSortOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/MergeSortEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/MergeSortStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/MergeSortRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/MergeSortService.java" afterDir="false" />
+    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Add MergeSort to spring boot">
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/merge-sort/merge-sort.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/merge-sort/merge-sort.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/AlgorithmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/AlgorithmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +114,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Hubert/IdeaProjects/MicroWebASD/frontend/src/app/model",
+    "last_opened_file_path": "C:/Users/Hubert/IdeaProjects/MicroWebASD/frontend/src/app/components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -141,11 +137,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\frontend\src\app\components" />
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\frontend\src\app\model" />
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\AlgorithmService\src\main\java\pl\pomoku\algorithmservice" />
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\AlgorithmService\src\main\resources\images" />
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\AlgorithmService\src\main\resources" />
-      <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\ApiGateway\src\main\java\pl\pomoku\apigateway" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\frontend\src\app\components\app" />
@@ -324,7 +320,7 @@
       <workItem from="1714298477633" duration="3851000" />
       <workItem from="1714304588343" duration="2000" />
       <workItem from="1714310476848" duration="638000" />
-      <workItem from="1714393769749" duration="60811000" />
+      <workItem from="1714393769749" duration="61702000" />
     </task>
     <task id="LOCAL-00001" summary="Start work with UserService">
       <option name="closed" value="true" />
@@ -454,7 +450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714601197307</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add MergeSort to spring boot">
+      <option name="closed" value="true" />
+      <created>1714607310957</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1714607310957</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,7 +492,8 @@
     <MESSAGE value="New type of response" />
     <MESSAGE value="Basic page" />
     <MESSAGE value="Add HoarePartition to frontend + add custom advice AOP to measure calculation time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add HoarePartition to frontend + add custom advice AOP to measure calculation time" />
+    <MESSAGE value="Add MergeSort to spring boot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add MergeSort to spring boot" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
