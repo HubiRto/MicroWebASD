@@ -13,6 +13,7 @@ import {PartitionComponent} from './components/partition/partition.component';
 import {HoarePartitionComponent} from './components/hoare-partition/hoare-partition.component';
 import {MergeSortComponent} from "./components/merge-sort/merge-sort.component";
 import {InsertionSortComponent} from './components/insertion-sort/insertion-sort.component';
+import {CountingSortComponent} from "./components/counting-sort/counting-sort.component";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {InsertionSortComponent} from './components/insertion-sort/insertion-sort
     PartitionComponent,
     HoarePartitionComponent,
     MergeSortComponent,
-    InsertionSortComponent
+    InsertionSortComponent,
+    CountingSortComponent
   ],
   imports: [
     BrowserModule,

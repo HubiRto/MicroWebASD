@@ -1,5 +1,5 @@
 <div class="mx-4 sm:mx-5 mt-5">
-  <h2 class="text-lg font-semibold text-white mb-3">Algorytm: Insertion Sort</h2>
+  <h2 class="text-lg font-semibold text-white mb-3">Algorytm: Counting Sort</h2>
   <div class="max-w-2xl px-4 py-6 bg-gray-800 text-white rounded-lg shadow-lg">
     <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
       <input type="text" [(ngModel)]="arrayInput" placeholder="Wprowadź array [int]"
@@ -16,14 +16,19 @@
       <p>Data obliczeń: {{ result.timestamp | date:'medium' }}</p>
       <p>Czas obliczeń: {{ result.calculateTimeMilSec }} ms</p>
     </div>
-    <h3 class="text-md font-semibold mb-2">Szczegóły stanów:</h3>
-    <div class="space-y-4">
-      <div *ngFor="let state of result.data.result?.steps; index as i" class="p-4 bg-gray-700 rounded shadow">
-        <h4 class="font-semibold border-b pb-2 mb-2">Operacja: {{ i + 1 }}</h4>
-        <p>Tablica: [{{ state.arrayState.join(', ') }}]</p>
-        <p>Liczba porównań: {{ state.comparisons }}</p>
-        <p>Liczba przestawień: {{ state.swaps }}</p>
-      </div>
+    <div class="p-4 bg-gray-700 rounded shadow">
+      <h4 class="font-semibold border-b pb-2 mb-2">Wypisywanie (Pierwsza pętla iteracyjna)</h4>
+      <p>Tablica: [{{ result.data.result?.countArray?.join(', ') }}]</p>
+    </div>
+
+    <div class="p-4 bg-gray-700 rounded shadow">
+      <h4 class="font-semibold border-b pb-2 mb-2">Sumowanie (Druga pętla iteracyjna)</h4>
+      <p>Tablica: [{{ result.data.result?.sumArray?.join(', ') }}]</p>
+    </div>
+
+    <div class="p-4 bg-gray-700 rounded shadow">
+      <h4 class="font-semibold border-b pb-2 mb-2">Wypisywanie (Trzecia pętla iteracyjna)</h4>
+      <p>Tablica: [{{ result.data.result?.printArray?.join(', ') }}]</p>
     </div>
   </div>
 </div>
