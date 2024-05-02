@@ -10,9 +10,9 @@ import {MatIconModule} from "@angular/material/icon";
 import {BinSearchComponent} from './components/bin-search/bin-search.component';
 import {HttpClientModule} from "@angular/common/http";
 import {PartitionComponent} from './components/partition/partition.component';
-import { AlgorithmComponentComponent } from './components/algorithm-component/algorithm-component.component';
-import { HoarePartitionComponent } from './components/hoare-partition/hoare-partition.component';
+import {HoarePartitionComponent} from './components/hoare-partition/hoare-partition.component';
 import {MergeSortComponent} from "./components/merge-sort/merge-sort.component";
+import {InsertionSortComponent} from './components/insertion-sort/insertion-sort.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,8 @@ import {MergeSortComponent} from "./components/merge-sort/merge-sort.component";
     BinSearchComponent,
     PartitionComponent,
     HoarePartitionComponent,
-    MergeSortComponent
+    MergeSortComponent,
+    InsertionSortComponent
   ],
   imports: [
     BrowserModule,
