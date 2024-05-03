@@ -4,14 +4,8 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import pl.pomoku.algorithmservice.dto.input.CountingSortInput;
-import pl.pomoku.algorithmservice.dto.input.InsertionSortInput;
-import pl.pomoku.algorithmservice.dto.input.MergeSortInput;
-import pl.pomoku.algorithmservice.dto.input.QuickSortPartitionInput;
-import pl.pomoku.algorithmservice.service.CountingSortService;
-import pl.pomoku.algorithmservice.service.InsertionSortService;
-import pl.pomoku.algorithmservice.service.MergeSortService;
-import pl.pomoku.algorithmservice.service.QuickSortPartitionService;
+import pl.pomoku.algorithmservice.dto.input.*;
+import pl.pomoku.algorithmservice.service.*;
 
 @RestController
 @RequestMapping("/api/v1/algorithm/sort")
@@ -22,6 +16,7 @@ public class SortersController {
     private final InsertionSortService insertionSortService;
     private final CountingSortService countingSortService;
     private final QuickSortPartitionService quickSortPartitionService;
+    private final RadixSortService radixSortService;
 
     @PostMapping("/merge-sort")
     public ResponseEntity<?> mergeSort(@Valid @RequestBody MergeSortInput input) {
@@ -41,5 +36,10 @@ public class SortersController {
     @PostMapping("/quick-sort-partition")
     public ResponseEntity<?> quickSortPartition(@Valid @RequestBody QuickSortPartitionInput input) {
         return ResponseEntity.ok(quickSortPartitionService.getResult(input).getResponse());
+    }
+
+    @PostMapping("/radix-sort")
+    public ResponseEntity<?> radixSort(@Valid @RequestBody RadixSortInput input) {
+        return ResponseEntity.ok(radixSortService.getResult(input).getResponse());
     }
 }
