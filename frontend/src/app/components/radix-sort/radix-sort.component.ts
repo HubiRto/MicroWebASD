@@ -1,25 +1,25 @@
 import {Component} from '@angular/core';
-import {BinSearchOutput} from "../../model/bin-search-output";
 import {AlgorithmComponentComponent} from "../algorithm-component/algorithm-component.component";
 import {AlgorithmInput} from "../../interface/algorithm-input";
 import {HttpClient} from "@angular/common/http";
+import {RadixSortOutput} from "../../interface/radix-sort-output";
 
 @Component({
   selector: 'app-bin-search',
-  templateUrl: './bin-search.component.html'
+  templateUrl: './radix-sort.component.html'
 })
-export class BinSearchComponent extends AlgorithmComponentComponent<BinSearchOutput> {
+export class RadixSortComponent extends AlgorithmComponentComponent<RadixSortOutput> {
   arrayInput: string = '';
   numberInput: number = 0;
 
   constructor(http: HttpClient) {
-    super(http, 'binary-search');
+    super(http, 'sort/radix-sort');
   }
 
   createInput(): AlgorithmInput {
     return {
       arr: this.arrayInput.split(',').map(s => Number(s.trim())),
-      x: Number(this.numberInput)
+      d: Number(this.numberInput)
     };
   }
 }

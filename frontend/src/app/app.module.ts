@@ -15,6 +15,7 @@ import {MergeSortComponent} from "./components/merge-sort/merge-sort.component";
 import {InsertionSortComponent} from './components/insertion-sort/insertion-sort.component';
 import {CountingSortComponent} from "./components/counting-sort/counting-sort.component";
 import {QuickSortPartitionComponent} from "./components/quick-sort-partition/quick-sort-partition.component";
+import {RadixSortComponent} from "./components/radix-sort/radix-sort.component";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {QuickSortPartitionComponent} from "./components/quick-sort-partition/qui
     MergeSortComponent,
     InsertionSortComponent,
     CountingSortComponent,
-    QuickSortPartitionComponent
+    QuickSortPartitionComponent,
+    RadixSortComponent
   ],
   imports: [
     BrowserModule,

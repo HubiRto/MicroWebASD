@@ -15,7 +15,7 @@ import pl.pomoku.algorithmservice.service.PartitionService;
 @RestController
 @RequestMapping("/api/v1/algorithm")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://192.168.0.128:4200/")
 public class AlgorithmController {
     private final BinSearchService binSearchService;
     private final PartitionService partitionService;

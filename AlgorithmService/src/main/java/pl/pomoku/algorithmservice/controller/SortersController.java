@@ -10,7 +10,7 @@ import pl.pomoku.algorithmservice.service.*;
 @RestController
 @RequestMapping("/api/v1/algorithm/sort")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class SortersController {
     private final MergeSortService mergeSortService;
     private final InsertionSortService insertionSortService;
