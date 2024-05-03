@@ -1,5 +1,5 @@
 export interface BinSearchOutput {
-  mArr: number[];
+  marr: number[];
   comparisonsCount: number;
   result: number;
 }

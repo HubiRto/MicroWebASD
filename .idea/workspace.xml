@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Finish Counting Sort in frontend">
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/QuickSortPartition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/QuickSortPartitionInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/QuickSortPartitionOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/QuickSortPartitionEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/QuickSortPartitionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/QuickSortPartitionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/QuickSortPartitionAlgorithmTest.java" afterDir="false" />
+    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Finish Quick Sort Partition in frontend">
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/quick-sort-partition/quick-sort-partition.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/quick-sort-partition/quick-sort-partition.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/interface/quick-sort-partition-output.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/SortersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/SortersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/bin-search/bin-search.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/bin-search/bin-search.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/bin-search/bin-search.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/bin-search/bin-search.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/model/bin-search-output.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/model/bin-search-output.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -337,7 +340,7 @@
       <workItem from="1714310476848" duration="638000" />
       <workItem from="1714393769749" duration="63276000" />
       <workItem from="1714664192060" duration="3139000" />
-      <workItem from="1714671061145" duration="13587000" />
+      <workItem from="1714671061145" duration="15944000" />
     </task>
     <task id="LOCAL-00001" summary="Start work with UserService">
       <option name="closed" value="true" />
@@ -523,7 +526,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714677069258</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Finish Quick Sort Partition in backend">
+      <option name="closed" value="true" />
+      <created>1714689846958</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1714689846958</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,7 +575,9 @@
     <MESSAGE value="Create page for Insertion Sort" />
     <MESSAGE value="Finish Counting Sort in backend" />
     <MESSAGE value="Finish Counting Sort in frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish Counting Sort in frontend" />
+    <MESSAGE value="Finish Quick Sort Partition in backend" />
+    <MESSAGE value="Finish Quick Sort Partition in frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Quick Sort Partition in frontend" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

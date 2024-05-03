@@ -14,6 +14,7 @@ import {HoarePartitionComponent} from './components/hoare-partition/hoare-partit
 import {MergeSortComponent} from "./components/merge-sort/merge-sort.component";
 import {InsertionSortComponent} from './components/insertion-sort/insertion-sort.component';
 import {CountingSortComponent} from "./components/counting-sort/counting-sort.component";
+import {QuickSortPartitionComponent} from "./components/quick-sort-partition/quick-sort-partition.component";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {CountingSortComponent} from "./components/counting-sort/counting-sort.co
     HoarePartitionComponent,
     MergeSortComponent,
     InsertionSortComponent,
-    CountingSortComponent
+    CountingSortComponent,
+    QuickSortPartitionComponent
   ],
   imports: [
     BrowserModule,
