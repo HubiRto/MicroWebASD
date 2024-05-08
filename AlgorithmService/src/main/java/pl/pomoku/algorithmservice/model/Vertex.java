@@ -1,27 +1,23 @@
 package pl.pomoku.algorithmservice.model;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @Data
+@ToString
 public class Vertex<T> {
     private final T data;
     private boolean visited;
+    private int depth = 0;
+    @ToString.Exclude
     private List<Vertex<T>> neighbors = new ArrayList<>();
 
     @Override
-    public String toString() {
-        return "Vertex(" + data + " : " + visited + "): " + Arrays.toString(neighborsToString()) + "\n";
-    }
-
-    public String[] neighborsToString() {
-        String[] datas = new String[neighbors.size()];
-        for (int i = 0; i < datas.length; i++) {
-            datas[i] = neighbors.get(i).data.toString();
-        }
-        return datas;
+    public int hashCode() {
+        return data != null ? data.hashCode() : 0;
     }
 }

@@ -37,5 +37,17 @@ public class HashUtils {
     public static int hash(List<Integer> list) {
         return Objects.hash(list);
     }
+
+    /**
+     * Generuje hash na podstawie grafu i pojedynczej wartości int.
+     *
+     * @param graph graf
+     * @param value wartość int
+     * @return wygenerowany hash
+     */
+    public static int hash(int[][] graph, int value) {
+        int result = Arrays.deepHashCode(graph);
+        return 31 * result + Integer.hashCode(value);
+    }
 }
 

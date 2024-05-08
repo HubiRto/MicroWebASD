@@ -4,14 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Create page for Radix Sort in frontend">
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/DepthFirstSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/Vertex.java" afterDir="false" />
+    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Save class DepthFirstSearch for safe">
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/FirstSearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/DepthFirstSearchInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/DepthFirstSearchOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/DepthFirstSearchEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/DepthFirstSearchRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/DepthFirstSearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/DepthFirstSearchAlgorithmTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/404de221-5552-42d4-9ef9-270b024d1942.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/404de221-5552-42d4-9ef9-270b024d1942.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/822b3a87-2475-47c5-b6b5-d59d7f5c9c60.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/822b3a87-2475-47c5-b6b5-d59d7f5c9c60.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c43efbab-b757-4eb4-a1ef-319a4560de90.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c43efbab-b757-4eb4-a1ef-319a4560de90.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/DepthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/DepthFirstSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/Vertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/HashUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/HashUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/app/app.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +46,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HubiRto&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HubiRto/MicroWebASD.git&quot;,
+    &quot;accountId&quot;: &quot;f22e0b3e-8224-40d7-9ae1-9f9d18cebf9f&quot;
+  }
+}</component>
   <component name="KubernetesApiProvider">{
   &quot;contexts&quot;: [
     {
@@ -59,93 +85,106 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BinSearch.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CountingSort.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DepthFirstSearch.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HoarePartition.executor&quot;: &quot;Run&quot;,
-    &quot;Application.InsertionSort.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MergeSort.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Partition.executor&quot;: &quot;Run&quot;,
-    &quot;Application.QuickSortPartition.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RadixSort.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.UseService: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.mongo-express: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.mongodb: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.rabbitmq: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AlgorithmControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BinarySearchAlgorithmTest.binSerachResultTest1.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BinarySearchAlgorithmTest.binSerachResultTest3.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BinarySearchAlgorithmTest.binSerachResultTest4.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BinarySearchAlgorithmTest.binSerachTest1.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BinarySearchAlgorithmTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest1.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.binSerachResultTest1.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest1.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest10.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest11.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest12.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest13.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest14.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest15.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest16.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest3.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest4.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest5.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest6.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest7.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest8.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest9.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QuickSortPartitionAlgorithmTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult1.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult3.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult4.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult5.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.MicroWebASD [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AlgorithmServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.AuthServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.DiscoveryServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.UseServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hubert/IdeaProjects/MicroWebASD/frontend/src/app/interface&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.appearance&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Hubert\\IdeaProjects\\MicroWebASD\\frontend\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BinSearch.executor": "Run",
+    "Application.CountingSort.executor": "Run",
+    "Application.DepthFirstSearch.executor": "Run",
+    "Application.HoarePartition.executor": "Run",
+    "Application.InsertionSort.executor": "Run",
+    "Application.MergeSort.executor": "Run",
+    "Application.Partition.executor": "Run",
+    "Application.QuickSortPartition.executor": "Run",
+    "Application.RadixSort.executor": "Run",
+    "Docker.UseService: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.mongo-express: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.mongodb: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.postgres: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.rabbitmq: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "JUnit.AlgorithmControllerTest.executor": "Run",
+    "JUnit.BinarySearchAlgorithmTest.binSerachResultTest1.executor": "Run",
+    "JUnit.BinarySearchAlgorithmTest.binSerachResultTest3.executor": "Run",
+    "JUnit.BinarySearchAlgorithmTest.binSerachResultTest4.executor": "Run",
+    "JUnit.BinarySearchAlgorithmTest.binSerachTest1.executor": "Run",
+    "JUnit.BinarySearchAlgorithmTest.executor": "Run",
+    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest1.executor": "Run",
+    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest10.executor": "Run",
+    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest2.executor": "Run",
+    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest3.executor": "Run",
+    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest4.executor": "Run",
+    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest5.executor": "Run",
+    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest6.executor": "Run",
+    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest7.executor": "Run",
+    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest8.executor": "Run",
+    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest9.executor": "Run",
+    "JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest1.executor": "Run",
+    "JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest2.executor": "Run",
+    "JUnit.PartitionAlgorithmTest (1).executor": "Run",
+    "JUnit.PartitionAlgorithmTest.binSerachResultTest1.executor": "Run",
+    "JUnit.PartitionAlgorithmTest.executor": "Run",
+    "JUnit.PartitionAlgorithmTest.partitionResultTest1.executor": "Run",
+    "JUnit.PartitionAlgorithmTest.partitionResultTest10.executor": "Run",
+    "JUnit.PartitionAlgorithmTest.partitionResultTest11.executor": "Run",
+    "JUnit.PartitionAlgorithmTest.partitionResultTest12.executor": "Run",
+    "JUnit.PartitionAlgorithmTest.partitionResultTest13.executor": "Run",
+    "JUnit.PartitionAlgorithmTest.partitionResultTest14.executor": "Run",
+    "JUnit.PartitionAlgorithmTest.partitionResultTest15.executor": "Run",
+    "JUnit.PartitionAlgorithmTest.partitionResultTest16.executor": "Run",
+    "JUnit.PartitionAlgorithmTest.partitionResultTest2.executor": "Run",
+    "JUnit.PartitionAlgorithmTest.partitionResultTest3.executor": "Run",
+    "JUnit.PartitionAlgorithmTest.partitionResultTest4.executor": "Run",
+    "JUnit.PartitionAlgorithmTest.partitionResultTest5.executor": "Run",
+    "JUnit.PartitionAlgorithmTest.partitionResultTest6.executor": "Run",
+    "JUnit.PartitionAlgorithmTest.partitionResultTest7.executor": "Run",
+    "JUnit.PartitionAlgorithmTest.partitionResultTest8.executor": "Run",
+    "JUnit.PartitionAlgorithmTest.partitionResultTest9.executor": "Run",
+    "JUnit.QuickSortPartitionAlgorithmTest.executor": "Run",
+    "JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult1.executor": "Run",
+    "JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult2.executor": "Run",
+    "JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult3.executor": "Run",
+    "JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult4.executor": "Run",
+    "JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult5.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.MicroWebASD [clean,install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AlgorithmServiceApplication.executor": "Run",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.AuthServiceApplication.executor": "Run",
+    "Spring Boot.DiscoveryServerApplication.executor": "Run",
+    "Spring Boot.UseServiceApplication.executor": "Run",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Hubert/IdeaProjects/MicroWebASD/frontend/src/app/interface",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "ts.external.directory.path": "C:\\Users\\Hubert\\IdeaProjects\\MicroWebASD\\frontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;,
-      &quot;mongo&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql",
+      "mongo"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -163,11 +202,11 @@
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\UseService" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.pomoku.algorithmservice.controller" />
       <recent name="pl.pomoku.algorithmservice.service" />
       <recent name="pl.pomoku.algorithmservice.repository" />
       <recent name="pl.pomoku.algorithmservice.entity" />
       <recent name="pl.pomoku.algorithmservice.dto.input" />
-      <recent name="pl.pomoku.algorithmservice.dto.output" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -179,21 +218,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AlgorithmServiceApplication">
-    <configuration name="DepthFirstSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.DepthFirstSearch" />
-      <module name="AlgorithmService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QuickSortPartitionAlgorithmTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest10">
+    <configuration name="DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmService" />
       <extension name="coverage">
         <pattern>
@@ -202,29 +228,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.QuickSortPartitionAlgorithmTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QuickSortPartitionAlgorithmTest.quickSortPartitionResult3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AlgorithmService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.QuickSortPartitionAlgorithmTest" />
-      <option name="METHOD_NAME" value="quickSortPartitionResult3" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.DepthFirstSearchAlgorithmTest" />
+      <option name="METHOD_NAME" value="depthFirstSearchResultTest10" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickSortPartitionAlgorithmTest.quickSortPartitionResult4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmService" />
       <extension name="coverage">
         <pattern>
@@ -233,14 +244,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.QuickSortPartitionAlgorithmTest" />
-      <option name="METHOD_NAME" value="quickSortPartitionResult4" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.DepthFirstSearchAlgorithmTest" />
+      <option name="METHOD_NAME" value="depthFirstSearchResultTest6" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickSortPartitionAlgorithmTest.quickSortPartitionResult5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmService" />
       <extension name="coverage">
         <pattern>
@@ -249,8 +260,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.QuickSortPartitionAlgorithmTest" />
-      <option name="METHOD_NAME" value="quickSortPartitionResult5" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.DepthFirstSearchAlgorithmTest" />
+      <option name="METHOD_NAME" value="depthFirstSearchResultTest7" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AlgorithmService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.DepthFirstSearchAlgorithmTest" />
+      <option name="METHOD_NAME" value="depthFirstSearchResultTest8" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AlgorithmService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.DepthFirstSearchAlgorithmTest" />
+      <option name="METHOD_NAME" value="depthFirstSearchResultTest9" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -294,11 +337,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.DepthFirstSearch" />
-      <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest" />
-      <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult3" />
-      <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult4" />
-      <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult5" />
+      <item itemvalue="JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest10" />
+      <item itemvalue="JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest6" />
+      <item itemvalue="JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest7" />
+      <item itemvalue="JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest8" />
+      <item itemvalue="JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest9" />
       <item itemvalue="Spring Boot.AlgorithmServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
@@ -306,13 +349,21 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DepthFirstSearch" />
-        <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult5" />
-        <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult4" />
-        <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest" />
-        <item itemvalue="JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult3" />
+        <item itemvalue="JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest10" />
+        <item itemvalue="JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest9" />
+        <item itemvalue="JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest8" />
+        <item itemvalue="JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest7" />
+        <item itemvalue="JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest6" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -340,6 +391,14 @@
       <workItem from="1714990772261" duration="356000" />
       <workItem from="1714991594755" duration="2522000" />
       <workItem from="1715103854995" duration="5000" />
+      <workItem from="1715149529085" duration="1853000" />
+      <workItem from="1715154012415" duration="787000" />
+      <workItem from="1715164951054" duration="2413000" />
+      <workItem from="1715170464412" duration="4737000" />
+      <workItem from="1715178428606" duration="316000" />
+      <workItem from="1715179294346" duration="816000" />
+      <workItem from="1715200773583" duration="1138000" />
+      <workItem from="1715202169684" duration="942000" />
     </task>
     <task id="LOCAL-00001" summary="Start work with UserService">
       <option name="closed" value="true" />
@@ -557,7 +616,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714707562267</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Save class DepthFirstSearch for safe">
+      <option name="closed" value="true" />
+      <created>1715174262585</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1715174262585</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +642,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finish Api Gateway" />
     <MESSAGE value="Initial login completed for now (Eureka Server + Api Gateway + Auth Service)" />
     <MESSAGE value="Capturing invalid jwt token structure" />
     <MESSAGE value="Capturing invalid jwt token structure dont work" />
@@ -600,7 +666,8 @@
     <MESSAGE value="Finish Quick Sort Partition in frontend" />
     <MESSAGE value="Finish Radix Sort in backend" />
     <MESSAGE value="Create page for Radix Sort in frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create page for Radix Sort in frontend" />
+    <MESSAGE value="Save class DepthFirstSearch for safe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save class DepthFirstSearch for safe" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
