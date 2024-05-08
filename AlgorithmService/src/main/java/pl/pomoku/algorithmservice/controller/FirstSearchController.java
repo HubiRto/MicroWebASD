@@ -16,7 +16,7 @@ import pl.pomoku.algorithmservice.service.DepthFirstSearchService;
 public class FirstSearchController {
     private final DepthFirstSearchService depthFirstSearchService;
 
-    @PostMapping("/merge-sort")
+    @PostMapping("/depth-first-search")
     public ResponseEntity<?> depthFirstSearch(@Valid @RequestBody DepthFirstSearchInput input) {
         return ResponseEntity.ok(depthFirstSearchService.getResult(input).getResponse());
     }
