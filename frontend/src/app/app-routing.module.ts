@@ -8,6 +8,7 @@ import {InsertionSortComponent} from "./components/insertion-sort/insertion-sort
 import {CountingSortComponent} from "./components/counting-sort/counting-sort.component";
 import {QuickSortPartitionComponent} from "./components/quick-sort-partition/quick-sort-partition.component";
 import {RadixSortComponent} from "./components/radix-sort/radix-sort.component";
+import {DepthFirstSearchComponent} from "./components/depth-first-search/depth-first-search.component";
 
 const routes: Routes = [
   {path: 'algorithm/binary-search', component: BinSearchComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'algorithm/sort/counting-sort', component: CountingSortComponent},
   {path: 'algorithm/sort/quick-sort-partition', component: QuickSortPartitionComponent},
   {path: 'algorithm/sort/radix-sort', component: RadixSortComponent},
+  {path: 'algorithm/first-search/depth-first-search', component: DepthFirstSearchComponent},
 ];
 
 @NgModule({

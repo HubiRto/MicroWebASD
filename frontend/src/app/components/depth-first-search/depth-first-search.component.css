@@ -1,0 +1,28 @@
+.add-row-button {
+  margin-left: 8px;
+  color: #ffffff;
+  background-color: #5c6bc0;
+  border-radius: 30%;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-row-button:hover {
+  background-color: #3949ab;
+}
+
+.add-row-button:active {
+  background-color: #303f9f;
+  transform: scale(0.95);
+}
+
+.start-index-input {
+  width: 60px;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.font-medium {
+  font-weight: 500;
+}

@@ -16,6 +16,9 @@ import {InsertionSortComponent} from './components/insertion-sort/insertion-sort
 import {CountingSortComponent} from "./components/counting-sort/counting-sort.component";
 import {QuickSortPartitionComponent} from "./components/quick-sort-partition/quick-sort-partition.component";
 import {RadixSortComponent} from "./components/radix-sort/radix-sort.component";
+import {DepthFirstSearchComponent} from "./components/depth-first-search/depth-first-search.component";
+import {MatIconButton} from "@angular/material/button";
+import {MapToEntriesPipe} from "./utils/map-to-entries-pipe";
 
 @NgModule({
   declarations: [
@@ -28,7 +31,9 @@ import {RadixSortComponent} from "./components/radix-sort/radix-sort.component";
     InsertionSortComponent,
     CountingSortComponent,
     QuickSortPartitionComponent,
-    RadixSortComponent
+    RadixSortComponent,
+    DepthFirstSearchComponent,
+    MapToEntriesPipe
   ],
   imports: [
     BrowserModule,
@@ -36,7 +41,8 @@ import {RadixSortComponent} from "./components/radix-sort/radix-sort.component";
     FormsModule,
     FaIconComponent,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconButton
   ],
   providers: [],
   bootstrap: [AppComponent]

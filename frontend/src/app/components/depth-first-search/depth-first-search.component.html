@@ -1,0 +1,44 @@
+<div class="mx-4 sm:mx-5 mt-5">
+  <h2 class="text-lg font-semibold text-white mb-3">Algorytm: Depth First Search (DFS)</h2>
+  <div class="max-w-2xl px-4 py-6 bg-gray-800 text-white rounded-lg shadow-lg">
+    <div class="flex flex-col space-y-4">
+      <div *ngFor="let row of graph; let i = index" class="flex items-center space-x-3">
+        <span class="text-white font-medium">#[{{ i }}]</span>
+        <input type="text" [(ngModel)]="graph[i]" placeholder="Wprowadź wiersz macierzy [int]"
+               class="flex-grow p-2 border border-gray-300 rounded shadow-inner bg-gray-200 text-black">
+        <input *ngIf="i === graph.length - 1" type="number" [(ngModel)]="startIndex" placeholder="Start idx"
+               class="start-index-input p-2 border border-gray-300 rounded shadow-inner bg-gray-200 text-black">
+        <button mat-icon-button *ngIf="i === graph.length - 1" (click)="addNewRow()"
+                class="add-row-button">
+          <mat-icon>add</mat-icon>
+        </button>
+      </div>
+    </div>
+    <button (click)="processData()"
+            class="mt-4 w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+      Submit
+    </button>
+  </div>
+  <div class="mt-4 max-w-4xl px-4 py-6 bg-gray-800 text-white rounded-lg shadow-lg space-y-4" *ngIf="result">
+    <div>
+      <p>Data obliczeń: {{ result.timestamp | date:'medium' }}</p>
+      <p>Czas obliczeń: {{ result.calculateTimeMilSec }} ms</p>
+    </div>
+    <div class="p-4 bg-gray-700 rounded shadow">
+      <p>Operacje push: {{ result.data.result?.pushOperationCount }}</p>
+      <p>Operacje pop: {{ result.data.result?.popOperationCount }}</p>
+      <p>Maksymalna głębokość stosu: {{ result.data.result?.maxStackSize }}</p>
+      <p>Maksymalna wysokosc drzewa: {{ result.data.result?.maxDepth }}</p>
+      <p>Ilosc wierzcholkow zewnetrznych: {{ result.data.result?.externalCount }}</p>
+      <p>Ilosc wierzcholkow wewnetrznych: {{ result.data.result?.internalCount }}</p>
+      <p>Ścieżka przeszukiwania: [{{ result.data.result?.traverse?.join(', ') }}]</p>
+    </div>
+    <h3 class="text-md font-semibold mb-2">Szczegółowe Ścieżki:</h3>
+    <div class="space-y-4" *ngIf="result">
+      <div *ngFor="let key of objectKeys(result?.data?.result?.paths ?? {})" class="p-4 bg-gray-700 rounded shadow">
+        <h4 class="font-semibold border-b pb-2 mb-2">Ścieżka do wierzchołka: {{ key }}</h4>
+        <p>Wierzchołki: [{{ getVerticesPath(key) }}]</p>
+      </div>
+    </div>
+  </div>
+</div>

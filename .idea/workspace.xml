@@ -4,28 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Save class DepthFirstSearch for safe">
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/FirstSearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/DepthFirstSearchInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/DepthFirstSearchOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/DepthFirstSearchEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/DepthFirstSearchRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/DepthFirstSearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/DepthFirstSearchAlgorithmTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/404de221-5552-42d4-9ef9-270b024d1942.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/404de221-5552-42d4-9ef9-270b024d1942.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/822b3a87-2475-47c5-b6b5-d59d7f5c9c60.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/822b3a87-2475-47c5-b6b5-d59d7f5c9c60.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c43efbab-b757-4eb4-a1ef-319a4560de90.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c43efbab-b757-4eb4-a1ef-319a4560de90.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Fix post mapping in controller for DepthFirstSearch">
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/depth-first-search/depth-first-search.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/depth-first-search/depth-first-search.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/depth-first-search/depth-first-search.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/interface/depth-first-search-output.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/DepthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/DepthFirstSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/Vertex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/HashUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/HashUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/DepthFirstSearchOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/DepthFirstSearchOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/DepthFirstSearchAlgorithmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/DepthFirstSearchAlgorithmTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +153,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Hubert/IdeaProjects/MicroWebASD/frontend/src/app/interface",
+    "last_opened_file_path": "/home/hubirto/Projects/MicroWebASD/frontend/src/app/interface",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -175,7 +164,7 @@
     "project.structure.side.proportion": "0.0",
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "preferences.editor",
-    "ts.external.directory.path": "C:\\Users\\Hubert\\IdeaProjects\\MicroWebASD\\frontend\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "/home/hubirto/Projects/MicroWebASD/frontend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -190,11 +179,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/app/interface" />
+      <recent name="$PROJECT_DIR$/frontend/src/app/components" />
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\frontend\src\app\interface" />
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\frontend\src\app\components" />
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\frontend\src\app\model" />
-      <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\AlgorithmService\src\main\java\pl\pomoku\algorithmservice" />
-      <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\AlgorithmService\src\main\resources\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\frontend\src\app\components\app" />
@@ -218,7 +207,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest10">
+  <component name="RunManager" selected="Spring Boot.AlgorithmServiceApplication">
     <configuration name="DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmService" />
       <extension name="coverage">
@@ -398,7 +387,8 @@
       <workItem from="1715178428606" duration="316000" />
       <workItem from="1715179294346" duration="816000" />
       <workItem from="1715200773583" duration="1138000" />
-      <workItem from="1715202169684" duration="942000" />
+      <workItem from="1715202169684" duration="1553000" />
+      <workItem from="1715203818235" duration="5773000" />
     </task>
     <task id="LOCAL-00001" summary="Start work with UserService">
       <option name="closed" value="true" />
@@ -624,7 +614,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715174262585</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Finish DepthFirstSearch with tests in backend">
+      <option name="closed" value="true" />
+      <created>1715203382629</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1715203382629</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Fix post mapping in controller for DepthFirstSearch">
+      <option name="closed" value="true" />
+      <created>1715203453460</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1715203453460</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -642,8 +648,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial login completed for now (Eureka Server + Api Gateway + Auth Service)" />
-    <MESSAGE value="Capturing invalid jwt token structure" />
     <MESSAGE value="Capturing invalid jwt token structure dont work" />
     <MESSAGE value="Code refactor" />
     <MESSAGE value="Start Algorithm Service" />
@@ -667,7 +671,9 @@
     <MESSAGE value="Finish Radix Sort in backend" />
     <MESSAGE value="Create page for Radix Sort in frontend" />
     <MESSAGE value="Save class DepthFirstSearch for safe" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save class DepthFirstSearch for safe" />
+    <MESSAGE value="Finish DepthFirstSearch with tests in backend" />
+    <MESSAGE value="Fix post mapping in controller for DepthFirstSearch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix post mapping in controller for DepthFirstSearch" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
