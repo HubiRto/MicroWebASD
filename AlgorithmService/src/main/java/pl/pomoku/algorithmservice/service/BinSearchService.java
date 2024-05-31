@@ -1,6 +1,10 @@
 package pl.pomoku.algorithmservice.service;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.core.HashOperations;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
 import pl.pomoku.algorithmservice.algorithm.BinSearch;
 import pl.pomoku.algorithmservice.annotations.MeasureCalculationTime;

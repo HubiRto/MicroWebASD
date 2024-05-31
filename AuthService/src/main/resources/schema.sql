@@ -5,7 +5,8 @@ CREATE SEQUENCE IF NOT EXISTS token_seq START WITH 1 INCREMENT BY 1;
 CREATE TABLE IF NOT EXISTS users
 (
     id         BIGINT       NOT NULL DEFAULT nextval('user_seq'),
-    student_id VARCHAR(255) NOT NULL,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
     email      VARCHAR(255) NOT NULL UNIQUE,
     password   VARCHAR(255) NOT NULL,
     PRIMARY KEY (id)

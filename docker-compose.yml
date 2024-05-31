@@ -34,6 +34,13 @@ services:
       - RABBITMQ_DEFAULT_PASS=password
     networks:
       - rabbitmq_go_net
+  redis:
+    image: redis
+    container_name: redis
+    environment:
+      - REDIS_PASSWORD=my-password
+    ports:
+      - "6379:6379"
 
 volumes:
   mongo: {}

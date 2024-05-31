@@ -2,9 +2,8 @@ package pl.pomoku.algorithmservice.algorithm;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import pl.pomoku.algorithmservice.dto.output.DepthFirstSearchOutput;
-
-import java.util.List;
+import pl.pomoku.algorithmservice.dto.output.FirstSearchOutput;
+import pl.pomoku.algorithmservice.utils.ArrayUtils;
 
 public class DepthFirstSearchAlgorithmTest {
 
@@ -21,10 +20,10 @@ public class DepthFirstSearchAlgorithmTest {
                 {1, 3, 5}
         };
 
-        DepthFirstSearchOutput output = DepthFirstSearch.calculate(graph, 0);
+        FirstSearchOutput output = new DepthFirstSearch().calculate(graph, 0);
 
-        Assertions.assertEquals(output.getPushOperationCount(), 8);
-        Assertions.assertArrayEquals(toArray(output.getTraverse()), new int[]{0, 5, 7, 3, 2, 6, 1, 4});
+        Assertions.assertEquals(output.getInOperationCount(), 8);
+        Assertions.assertArrayEquals(ArrayUtils.listToArray(output.getTraverse()), new int[]{0, 5, 7, 3, 2, 6, 1, 4});
         Assertions.assertNotEquals(output.getMaxDepth(), 3);
     }
 
@@ -41,7 +40,7 @@ public class DepthFirstSearchAlgorithmTest {
                 {3, 6}
         };
 
-        DepthFirstSearchOutput output = DepthFirstSearch.calculate(graph, 5);
+        FirstSearchOutput output = new DepthFirstSearch().calculate(graph, 5);
 
         Assertions.assertEquals(output.getExternalCount(), 4);
         Assertions.assertNotEquals(output.getMaxDepth(), 4);
@@ -61,11 +60,11 @@ public class DepthFirstSearchAlgorithmTest {
                 {1, 2}
         };
 
-        DepthFirstSearchOutput output = DepthFirstSearch.calculate(graph, 3);
+        FirstSearchOutput output = new DepthFirstSearch().calculate(graph, 3);
 
         Assertions.assertEquals(output.getMaxDepth(), 4);
-        Assertions.assertEquals(output.getPushOperationCount(), 8);
-        Assertions.assertArrayEquals(toArray(output.getTraverse()), new int[]{3, 5, 2, 7, 4, 0, 6, 1});
+        Assertions.assertEquals(output.getInOperationCount(), 8);
+        Assertions.assertArrayEquals(ArrayUtils.listToArray(output.getTraverse()), new int[]{3, 5, 2, 7, 4, 0, 6, 1});
     }
 
     @Test
@@ -81,11 +80,11 @@ public class DepthFirstSearchAlgorithmTest {
                 {0, 2, 5}
         };
 
-        DepthFirstSearchOutput output = DepthFirstSearch.calculate(graph, 7);
+        FirstSearchOutput output = new DepthFirstSearch().calculate(graph, 7);
 
-        Assertions.assertEquals(output.getMaxStackSize(), 4);
+        Assertions.assertEquals(output.getMaxDequeSize(), 4);
         Assertions.assertTrue(output.getPaths().get(6).contains(5));
-        Assertions.assertNotEquals(output.getPushOperationCount(), 7);
+        Assertions.assertNotEquals(output.getInOperationCount(), 7);
     }
 
     @Test
@@ -101,10 +100,10 @@ public class DepthFirstSearchAlgorithmTest {
                 {0, 1, 3, 4, 5}
         };
 
-        DepthFirstSearchOutput output = DepthFirstSearch.calculate(graph, 7);
+        FirstSearchOutput output = new DepthFirstSearch().calculate(graph, 7);
 
-        Assertions.assertArrayEquals(toArray(output.getTraverse()), new int[]{7, 5, 2, 6, 4, 3, 1, 0});
-        Assertions.assertNotEquals(output.getMaxStackSize(), 6);
+        Assertions.assertArrayEquals(ArrayUtils.listToArray(output.getTraverse()), new int[]{7, 5, 2, 6, 4, 3, 1, 0});
+        Assertions.assertNotEquals(output.getMaxDequeSize(), 6);
         Assertions.assertNotEquals(output.getExternalCount(), 6);
     }
 
@@ -121,9 +120,9 @@ public class DepthFirstSearchAlgorithmTest {
                 {4, 5}
         };
 
-        DepthFirstSearchOutput output = DepthFirstSearch.calculate(graph, 3);
+        FirstSearchOutput output = new DepthFirstSearch().calculate(graph, 3);
 
-        Assertions.assertEquals(output.getPushOperationCount(), 8);
+        Assertions.assertEquals(output.getInOperationCount(), 8);
         Assertions.assertNotEquals(output.getInternalCount(), 4);
         Assertions.assertEquals(output.getInternalCount(), 3);
     }
@@ -141,11 +140,11 @@ public class DepthFirstSearchAlgorithmTest {
                 {0, 2, 3, 6}
         };
 
-        DepthFirstSearchOutput output = DepthFirstSearch.calculate(graph, 0);
+        FirstSearchOutput output = new DepthFirstSearch().calculate(graph, 0);
 
         Assertions.assertEquals(output.getInternalCount(), 2);
         Assertions.assertEquals(output.getExternalCount(), 6);
-        Assertions.assertEquals(output.getMaxStackSize(), 6);
+        Assertions.assertEquals(output.getMaxDequeSize(), 6);
     }
 
     @Test
@@ -161,10 +160,10 @@ public class DepthFirstSearchAlgorithmTest {
                 {0, 2, 4}
         };
 
-        DepthFirstSearchOutput output = DepthFirstSearch.calculate(graph, 2);
+        FirstSearchOutput output = new DepthFirstSearch().calculate(graph, 2);
 
         Assertions.assertEquals(output.getExternalCount(), 5);
-        Assertions.assertNotEquals(output.getPushOperationCount(), 7);
+        Assertions.assertNotEquals(output.getInOperationCount(), 7);
         Assertions.assertFalse(output.getPaths().get(7).contains(4));
     }
 
@@ -181,9 +180,9 @@ public class DepthFirstSearchAlgorithmTest {
                 {0, 1, 2, 3}
         };
 
-        DepthFirstSearchOutput output = DepthFirstSearch.calculate(graph, 5);
+        FirstSearchOutput output = new DepthFirstSearch().calculate(graph, 5);
 
-        Assertions.assertEquals(output.getMaxStackSize(), 5);
+        Assertions.assertEquals(output.getMaxDequeSize(), 5);
         Assertions.assertTrue(output.getPaths().get(7).contains(3));
         Assertions.assertEquals(output.getExternalCount(), 6);
     }
@@ -201,14 +200,10 @@ public class DepthFirstSearchAlgorithmTest {
                 {4, 5, 6}
         };
 
-        DepthFirstSearchOutput output = DepthFirstSearch.calculate(graph, 1);
+        FirstSearchOutput output = new DepthFirstSearch().calculate(graph, 1);
 
-        Assertions.assertEquals(output.getPopOperationCount(), 8);
+        Assertions.assertEquals(output.getOutOperationCount(), 8);
         Assertions.assertFalse(output.getPaths().get(6).contains(0));
-        Assertions.assertNotEquals(output.getMaxStackSize(), 4);
-    }
-
-    public static int[] toArray(List<Integer> list) {
-        return list.stream().mapToInt(Integer::intValue).toArray();
+        Assertions.assertNotEquals(output.getMaxDequeSize(), 4);
     }
 }

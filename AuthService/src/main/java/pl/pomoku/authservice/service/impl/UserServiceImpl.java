@@ -46,14 +46,15 @@ public class UserServiceImpl implements UserService {
     }
 
     private boolean existByRegisterRequest(RegisterUserRequest request) {
-        return repository.existsByEmailAndStudentId(request.email(), request.studentId());
+        return repository.existsByEmail(request.email());
     }
 
     private User getUserFromRegisterRequest(RegisterUserRequest request) {
         return User.builder()
                 .email(request.email())
                 .password(passwordEncoder.encode(request.password()))
-                .studentId(request.studentId())
+                .firstName(request.firstName())
+                .lastName(request.lastName())
                 .roles(new HashSet<>(List.of(roleRepository.findByName("USER"))))
                 .build();
     }

@@ -20,4 +20,13 @@ public class Vertex<T> {
     public int hashCode() {
         return data != null ? data.hashCode() : 0;
     }
+
+    public void visit() {
+        this.setVisited(true);
+    }
+
+    public void visitAndUpdateDepth(int currentDepth) {
+        this.setVisited(true);
+        this.setDepth(currentDepth + 1);
+    }
 }
