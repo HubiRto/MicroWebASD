@@ -36,7 +36,6 @@ public class TreeChecker {
             insertNode(value, path);
         }
         assignLevels(this.root);
-        System.out.println(this.root);
     }
 
     private void insertNode(int value, String path) {
@@ -81,7 +80,6 @@ public class TreeChecker {
     public TreeChecker(Node root) {
         this.root = root;
         assignLevels(this.root);
-        System.out.println(this.root);
     }
 
     private void assignLevels(Node root) {
