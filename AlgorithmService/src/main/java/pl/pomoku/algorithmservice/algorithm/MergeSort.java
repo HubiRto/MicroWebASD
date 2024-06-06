@@ -10,7 +10,7 @@ public class MergeSort {
         return calculate(input.getArr());
     }
 
-    public static MergeSortOutput calculate(int[] arr) {
+    public static MergeSortOutput calculate(Integer[] arr) {
         MergeSortOutput data = new MergeSortOutput();
         data.setOriginalArray(arr.clone());
         mergeSort(arr, -1, data);
@@ -18,7 +18,7 @@ public class MergeSort {
         return data;
     }
 
-    private static void mergeSort(int[] arr, int depth, MergeSortOutput data) {
+    private static void mergeSort(Integer[] arr, int depth, MergeSortOutput data) {
         if (arr.length > 1) {
             if (depth + 1 > data.getMaxDepth()) {
                 data.setMaxDepth(depth + 1);
@@ -27,8 +27,8 @@ public class MergeSort {
             data.getSteps().add(new MergeSortStep(data.getRecursiveCallCount() + 1, arr));
 
             int mid = arr.length / 2;
-            int[] leftHalf = new int[mid];
-            int[] rightHalf = new int[arr.length - mid];
+            Integer[] leftHalf = new Integer[mid];
+            Integer[] rightHalf = new Integer[arr.length - mid];
 
             System.arraycopy(arr, 0, leftHalf, 0, mid);
             System.arraycopy(arr, mid, rightHalf, 0, arr.length - mid);
@@ -47,7 +47,7 @@ public class MergeSort {
         }
     }
 
-    private static void merge(int[] arr, int[] leftHalf, int[] rightHalf) {
+    private static void merge(Integer[] arr, Integer[] leftHalf, Integer[] rightHalf) {
         int i = 0, j = 0, k = 0;
 
         while (i < leftHalf.length && j < rightHalf.length) {

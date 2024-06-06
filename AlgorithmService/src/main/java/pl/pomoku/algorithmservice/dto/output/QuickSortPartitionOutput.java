@@ -15,7 +15,7 @@ public class QuickSortPartitionOutput extends AbstractCalculationTime<QuickSortP
     private int partitionCount = 0;
     private int quickSortPartitionCount = 0;
     private int depth = 1;
-    private List<int[]> steps = new ArrayList<>();
+    private List<Integer[]> steps = new ArrayList<>();
 
     @Override
     protected QuickSortPartitionOutput getOutput() {

@@ -7,5 +7,5 @@ import lombok.Data;
 @AllArgsConstructor
 public class MergeSortStep {
     private int argIndex;
-    private int[] arr;
+    private Integer[] arr;
 }

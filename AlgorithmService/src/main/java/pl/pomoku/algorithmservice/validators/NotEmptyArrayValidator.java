@@ -6,7 +6,7 @@ import org.springframework.http.HttpStatus;
 import pl.pomoku.algorithmservice.annotations.NotEmptyArray;
 import pl.pomoku.algorithmservice.exception.AppException;
 
-public class NotEmptyArrayValidator implements ConstraintValidator<NotEmptyArray, int[]> {
+public class NotEmptyArrayValidator implements ConstraintValidator<NotEmptyArray, Object[]> {
     private String message;
     @Override
     public void initialize(NotEmptyArray constraintAnnotation) {
@@ -14,7 +14,7 @@ public class NotEmptyArrayValidator implements ConstraintValidator<NotEmptyArray
     }
 
     @Override
-    public boolean isValid(int[] array, ConstraintValidatorContext context) {
+    public boolean isValid(Object[] array, ConstraintValidatorContext context) {
         if(array.length == 0){
             throw new AppException(message, HttpStatus.BAD_REQUEST);
         }

@@ -14,7 +14,7 @@ public class InsertionSort {
         return calculate(input.getArr());
     }
 
-    public static InsertionSortOutput calculate(int[] arr) {
+    public static InsertionSortOutput calculate(Integer[] arr) {
         List<InsertionSortStep> steps = new ArrayList<>();
         int comparisons = 0;
         int swaps = 0;

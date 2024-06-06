@@ -26,8 +26,8 @@ public class StackSequenceAlgorithmTest {
         Assertions.assertEquals(output.getMaxSize(), 12);
         Assertions.assertNotEquals(output.getMaxSize(), 13);
         Assertions.assertNotEquals(output.getLastSize(), new StackSequence(initArray).execute(
-                build(PUSH, build(POP), 13),
-                build(PUSH, build(POP), 14),
+                build(build(POP), 13),
+                build(build(POP), 14),
                 build(PUSH, build(TOP)),
                 build(TOP),
                 build(POP, build(PUSH, build(TOP))),
@@ -38,7 +38,8 @@ public class StackSequenceAlgorithmTest {
 
     @Test
     public void stackSequenceResultTest2() {
-        StackSequence stackSequence = new StackSequence(8, 4, 5, 2, 7, 12, 0, 1, 11, 19, 15, 14);
+        int[] initArray = new int[]{8, 4, 5, 2, 7, 12, 0, 1, 11, 19, 15, 14};
+        StackSequence stackSequence = new StackSequence(initArray);
         StackSequenceOutput output = stackSequence.execute(
                 build(POP),
                 build(4),
@@ -66,7 +67,7 @@ public class StackSequenceAlgorithmTest {
         );
         Assertions.assertNotEquals(output.getLastSize(), 15);
         Assertions.assertTrue(output.getTop() > new StackSequence(initArray).execute(
-                build(PUSH, build(POP), 13),
+                build(build(POP), 13),
                 build(TOP),
                 build(POP),
                 build(PUSH, build(TOP)),
@@ -78,7 +79,8 @@ public class StackSequenceAlgorithmTest {
 
     @Test
     public void stackSequenceResultTest4() {
-        StackSequence stackSequence = new StackSequence(10, 17, 3, 8, 9, 6, 7, 0, 5, 2, 13, 4);
+        int[] initArray = new int[]{10, 17, 3, 8, 9, 6, 7, 0, 5, 2, 13, 4};
+        StackSequence stackSequence = new StackSequence(initArray);
         StackSequenceOutput output = stackSequence.execute(
                 build(POP, build(PUSH, build(TOP))),
                 build(8),
@@ -130,7 +132,7 @@ public class StackSequenceAlgorithmTest {
         return StackSequenceOperation.builder().type(StackSequenceOperationType.PUSH).value(value).build();
     }
 
-    private static StackSequenceOperation build(StackSequenceOperationType type, StackSequenceOperation element, int value) {
-        return StackSequenceOperation.builder().type(type).element(element).value(value).build();
+    private static StackSequenceOperation build(StackSequenceOperation element, int value) {
+        return StackSequenceOperation.builder().type(StackSequenceOperationType.PUSH).element(element).value(value).build();
     }
 }

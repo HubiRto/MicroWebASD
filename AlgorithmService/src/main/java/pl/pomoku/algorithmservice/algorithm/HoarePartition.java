@@ -25,11 +25,11 @@ public class HoarePartition {
      * Overloaded method to initiate the partition calculation. It prepares the output object and starts the recursive partitioning.
      *
      * @param arr The array from which to find the k-th smallest element.
-     * @param k The index of the element to find (zero-based).
+     * @param k   The index of the element to find (zero-based).
      * @return An instance of {@link HoarePartitionOutput} with the result and other details of the computation.
      * @throws IllegalArgumentException if the input array is empty.
      */
-    public static HoarePartitionOutput calculate(int[] arr, int k) {
+    public static HoarePartitionOutput calculate(Integer[] arr, int k) {
         HoarePartitionOutput output = new HoarePartitionOutput();
         output.setResult(calculate(arr, k, 0, output));
         return output;
@@ -38,14 +38,14 @@ public class HoarePartition {
     /**
      * Core recursive method for calculating the k-th smallest element using the Hoare partition. It performs the actual partitioning and recursive calls.
      *
-     * @param arr The array or subarray currently being partitioned.
-     * @param k The adjusted rank of the element to find in the current subarray context.
-     * @param depth The current depth of the recursion for traceability.
+     * @param arr    The array or subarray currently being partitioned.
+     * @param k      The adjusted rank of the element to find in the current subarray context.
+     * @param depth  The current depth of the recursion for traceability.
      * @param output The output object to record each step and the overall depth.
      * @return The value of the k-th smallest element found in the array.
      * @throws AppException if the input array is empty, detailed with a specific HTTP status code for appropriate client response handling.
      */
-    public static int calculate(int[] arr, int k, int depth, HoarePartitionOutput output) {
+    public static int calculate(Integer[] arr, int k, int depth, HoarePartitionOutput output) {
         output.setDepth(depth);
         output.addStep(new HoarePartitionStep(Arrays.copyOf(arr, arr.length), k));
 
@@ -61,10 +61,10 @@ public class HoarePartition {
         if (n - m == k) {
             return m;
         } else if (n - m > k) {
-            int[] subarray = Arrays.copyOfRange(arr, m + 1, n);
+            Integer[] subarray = Arrays.copyOfRange(arr, m + 1, n);
             return m + 1 + calculate(subarray, k, depth + 1, output);
         } else {
-            int[] subarray = Arrays.copyOfRange(arr, 0, m);
+            Integer[] subarray = Arrays.copyOfRange(arr, 0, m);
             return calculate(subarray, k - (n - m), depth + 1, output);
         }
     }

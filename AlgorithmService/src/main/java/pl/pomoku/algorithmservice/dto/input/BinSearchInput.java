@@ -23,7 +23,7 @@ public class BinSearchInput {
     @NotNullArray(groups = ValidationOrder.First.class)
     @NotEmptyArray(groups = ValidationOrder.Second.class)
     @SortedArray(groups = ValidationOrder.Third.class)
-    private int[] arr;
+    private Integer[] arr;
     @NotNull(
             groups = ValidationOrder.First.class,
             message = "Binary search requires a not-null x value."

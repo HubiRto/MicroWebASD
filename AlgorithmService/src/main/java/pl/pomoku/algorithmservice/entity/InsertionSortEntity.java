@@ -6,9 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.springframework.data.mongodb.core.mapping.Document;
-import pl.pomoku.algorithmservice.dto.input.BinSearchInput;
 import pl.pomoku.algorithmservice.dto.input.InsertionSortInput;
-import pl.pomoku.algorithmservice.dto.output.BinSearchOutput;
 import pl.pomoku.algorithmservice.dto.output.InsertionSortOutput;
 
 @Data

@@ -1,7 +1,6 @@
 package pl.pomoku.algorithmservice.dto.output;
 
 import lombok.*;
-import org.springframework.data.redis.core.RedisHash;
 import pl.pomoku.algorithmservice.model.AbstractCalculationTime;
 
 import java.io.Serializable;

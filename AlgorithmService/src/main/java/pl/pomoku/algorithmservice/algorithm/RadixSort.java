@@ -14,7 +14,7 @@ public class RadixSort {
         return calculate(input.getArr(), input.getD());
     }
 
-    public static RadixSortOutput calculate(int[] arr, int d) {
+    public static RadixSortOutput calculate(Integer[] arr, int d) {
         RadixSortOutput output = new RadixSortOutput();
         List<Queue<Integer>> queues = new ArrayList<>();
 

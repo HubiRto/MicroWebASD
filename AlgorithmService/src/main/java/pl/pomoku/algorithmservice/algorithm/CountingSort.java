@@ -9,7 +9,7 @@ public class CountingSort {
         return calculate(input.getArr());
     }
 
-    public static CountingSortOutput calculate(int[] arr) {
+    public static CountingSortOutput calculate(Integer[] arr) {
         CountingSortOutput output = new CountingSortOutput();
 
         int n = arr.length;

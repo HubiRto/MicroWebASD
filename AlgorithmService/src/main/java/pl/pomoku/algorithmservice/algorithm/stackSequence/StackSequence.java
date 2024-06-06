@@ -19,6 +19,16 @@ public class StackSequence {
         output.setMaxSize(stack.size());
     }
 
+    public StackSequence(Integer... initArray) {
+        this.stack = new Stack<>();
+        this.output = new StackSequenceOutput();
+
+        for (int value : initArray) {
+            stack.push(value);
+        }
+        output.setMaxSize(stack.size());
+    }
+
     public StackSequenceOutput execute(StackSequenceOperation... elements) {
         Arrays.stream(elements).forEach(this::execute);
         output.setLastSize(stack.size());

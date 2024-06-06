@@ -4,65 +4,81 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Fix post mapping in controller for DepthFirstSearch">
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/AbstractFirstSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/BreadthFirstSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/stackSequence/StackSequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/stackSequence/StackSequenceAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/stackSequence/StackSequenceOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/stackSequence/StackSequenceOperationType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/FirstSearchInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/StackSequenceInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/FirstSearchOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/StackSequenceOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/BreadthFirstSearchEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/FirstSearchEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/deque/CounterDeque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/deque/CounterLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/BreadthFirstSearchRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/serializer/JsonToBinaryRedisSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/BreadthFirstSearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/BreadthFirstSearchAlgorithmTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/StackSequenceAlgorithmTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/assets/fonts/0xProtoNerdFont-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/assets/fonts/0xProtoNerdFontMono-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/assets/fonts/0xProtoNerdFontPropo-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/Components/Layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/Components/Missing.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/Components/RequireAuth.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/Hooks/UseAuth.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/Pages/Home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/Pages/Login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/Pages/Register.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/Provider/AuthContext.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Add two new algorithms: StackSequence + TraverseConverter and repair issues">
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/traverseConverter/TraverseConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/traverseConverter/TraverseType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/traverseConverter/TraverseTypeAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/treeChecker/TreeChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/annotations/FullBinaryTreeArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/annotations/NonEmptyNodeValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/annotations/UniqueNodeValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/annotations/ValidStackSequenceOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/TraverseConverterInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/TreeCheckerInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/TraverseConverterOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/TreeCheckerOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/StackSequenceEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/TraverseConverterEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/TreeCheckerEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/exception/InvalidNodePathException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/TreeCheckerStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/StackSequenceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/TraverseConverterRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/TreeCheckerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/StackSequenceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/TraverseConverterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/TreeCheckerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/FullBinaryTreeArrayValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/NonEmptyNodeValueValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/StackSequenceOperationValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/UniqueNodeValuesValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/TraverseConverterAlgorithmTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/TreeCheckerAlgorithmTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/404de221-5552-42d4-9ef9-270b024d1942.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/404de221-5552-42d4-9ef9-270b024d1942.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/AlgorithmServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/AlgorithmServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/DepthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/DepthFirstSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/FirstSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/FirstSearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/BinSearchOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/BinSearchOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/DepthFirstSearchOutput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/DepthFirstSearchEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/DepthFirstSearchEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/Vertex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/BinSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/BinSearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/DepthFirstSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/DepthFirstSearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/AbstractFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/AbstractFirstSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/BinSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/BinSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/CountingSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/CountingSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/HoarePartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/HoarePartition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/Partition.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/Partition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/QuickSortPartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/QuickSortPartition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/RadixSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/RadixSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/stackSequence/StackSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/stackSequence/StackSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/stackSequence/StackSequenceOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/stackSequence/StackSequenceOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/AlgorithmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/AlgorithmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/BinSearchInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/BinSearchInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/CountingSortInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/CountingSortInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/DepthFirstSearchInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/DepthFirstSearchInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/FirstSearchInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/FirstSearchInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/HoarePartitionInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/HoarePartitionInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/InsertionSortInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/InsertionSortInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/MergeSortInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/MergeSortInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/PartitionInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/PartitionInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/QuickSortPartitionInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/QuickSortPartitionInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/RadixSortInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/RadixSortInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/StackSequenceInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/StackSequenceInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/MergeSortOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/MergeSortOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/QuickSortPartitionOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/QuickSortPartitionOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/RadixSortOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/RadixSortOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/HoarePartitionStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/HoarePartitionStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/InsertionSortStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/InsertionSortStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/MergeSortStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/MergeSortStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/PartitionState.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/PartitionState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/ArrayUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/ArrayUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/HashUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/HashUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/NotEmptyArrayValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/NotEmptyArrayValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/NotNullArrayValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/NotNullArrayValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/BinarySearchAlgorithmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/BinarySearchAlgorithmTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/BreadthFirstSearchAlgorithmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/BreadthFirstSearchAlgorithmTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/DepthFirstSearchAlgorithmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/DepthFirstSearchAlgorithmTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiGateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/dto/request/RegisterUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/dto/request/RegisterUserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/pl/pomoku/authservice/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/HoarePartitionAlgorithmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/HoarePartitionAlgorithmTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/PartitionAlgorithmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/PartitionAlgorithmTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/QuickSortPartitionAlgorithmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/QuickSortPartitionAlgorithmTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/StackSequenceAlgorithmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/StackSequenceAlgorithmTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +92,8 @@
         <option value="Enum" />
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -119,118 +135,128 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BinSearch.executor": "Run",
-    "Application.CountingSort.executor": "Run",
-    "Application.DepthFirstSearch.executor": "Run",
-    "Application.HoarePartition.executor": "Run",
-    "Application.InsertionSort.executor": "Run",
-    "Application.MergeSort.executor": "Run",
-    "Application.Partition.executor": "Run",
-    "Application.QuickSortPartition.executor": "Run",
-    "Application.RadixSort.executor": "Run",
-    "Application.StackSequence.executor": "Run",
-    "Docker.UseService: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.mongo-express: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.mongodb: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.postgres: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.rabbitmq: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.redis: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "JUnit.AlgorithmControllerTest.executor": "Run",
-    "JUnit.BinarySearchAlgorithmTest.binSerachResultTest1.executor": "Run",
-    "JUnit.BinarySearchAlgorithmTest.binSerachResultTest3.executor": "Run",
-    "JUnit.BinarySearchAlgorithmTest.binSerachResultTest4.executor": "Run",
-    "JUnit.BinarySearchAlgorithmTest.binSerachTest1.executor": "Run",
-    "JUnit.BinarySearchAlgorithmTest.executor": "Run",
-    "JUnit.BreadthFirstSearchAlgorithmTest.depthFirstSearchResultTest1.executor": "Run",
-    "JUnit.BreadthFirstSearchAlgorithmTest.depthFirstSearchResultTest9.executor": "Run",
-    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest1.executor": "Run",
-    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest10.executor": "Run",
-    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest2.executor": "Run",
-    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest3.executor": "Run",
-    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest4.executor": "Run",
-    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest5.executor": "Run",
-    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest6.executor": "Run",
-    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest7.executor": "Run",
-    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest8.executor": "Run",
-    "JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest9.executor": "Run",
-    "JUnit.DepthFirstSearchAlgorithmTest.executor": "Run",
-    "JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest1.executor": "Run",
-    "JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest2.executor": "Run",
-    "JUnit.PartitionAlgorithmTest (1).executor": "Run",
-    "JUnit.PartitionAlgorithmTest.binSerachResultTest1.executor": "Run",
-    "JUnit.PartitionAlgorithmTest.executor": "Run",
-    "JUnit.PartitionAlgorithmTest.partitionResultTest1.executor": "Run",
-    "JUnit.PartitionAlgorithmTest.partitionResultTest10.executor": "Run",
-    "JUnit.PartitionAlgorithmTest.partitionResultTest11.executor": "Run",
-    "JUnit.PartitionAlgorithmTest.partitionResultTest12.executor": "Run",
-    "JUnit.PartitionAlgorithmTest.partitionResultTest13.executor": "Run",
-    "JUnit.PartitionAlgorithmTest.partitionResultTest14.executor": "Run",
-    "JUnit.PartitionAlgorithmTest.partitionResultTest15.executor": "Run",
-    "JUnit.PartitionAlgorithmTest.partitionResultTest16.executor": "Run",
-    "JUnit.PartitionAlgorithmTest.partitionResultTest2.executor": "Run",
-    "JUnit.PartitionAlgorithmTest.partitionResultTest3.executor": "Run",
-    "JUnit.PartitionAlgorithmTest.partitionResultTest4.executor": "Run",
-    "JUnit.PartitionAlgorithmTest.partitionResultTest5.executor": "Run",
-    "JUnit.PartitionAlgorithmTest.partitionResultTest6.executor": "Run",
-    "JUnit.PartitionAlgorithmTest.partitionResultTest7.executor": "Run",
-    "JUnit.PartitionAlgorithmTest.partitionResultTest8.executor": "Run",
-    "JUnit.PartitionAlgorithmTest.partitionResultTest9.executor": "Run",
-    "JUnit.QuickSortPartitionAlgorithmTest.executor": "Run",
-    "JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult1.executor": "Run",
-    "JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult2.executor": "Run",
-    "JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult3.executor": "Run",
-    "JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult4.executor": "Run",
-    "JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult5.executor": "Run",
-    "JUnit.StackSequenceAlgorithmTest.stackSequenceResultTest2.executor": "Run",
-    "JUnit.StackSequenceAlgorithmTest.stackSequenceResultTest3.executor": "Run",
-    "JUnit.StackSequenceAlgorithmTest.stackSequenceResultTest4.executor": "Run",
-    "JUnit.StackSequenceAlgorithmTest.stackSequenceResultTest5.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.AlgorithmService [clean,install].executor": "Run",
-    "Maven.MicroWebASD [clean,install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.AlgorithmServiceApplication.executor": "Run",
-    "Spring Boot.ApiGatewayApplication.executor": "Run",
-    "Spring Boot.AuthServiceApplication.executor": "Run",
-    "Spring Boot.DiscoveryServerApplication.executor": "Run",
-    "Spring Boot.UseServiceApplication.executor": "Run",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/hubirto/Projects/MicroWebASD/web-ui/src/assets/fonts",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
-    "ts.external.directory.path": "/home/hubirto/Projects/MicroWebASD/web-ui/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BinSearch.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CountingSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DepthFirstSearch.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HoarePartition.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InsertionSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MergeSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Partition.executor&quot;: &quot;Run&quot;,
+    &quot;Application.QuickSortPartition.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RadixSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StackSequence.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TreeChecker.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.UseService: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.mongo-express: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.mongodb: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.rabbitmq: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.redis: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgorithmControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BinarySearchAlgorithmTest.binSerachResultTest1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BinarySearchAlgorithmTest.binSerachResultTest3.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BinarySearchAlgorithmTest.binSerachResultTest4.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BinarySearchAlgorithmTest.binSerachTest1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BinarySearchAlgorithmTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BreadthFirstSearchAlgorithmTest.depthFirstSearchResultTest1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BreadthFirstSearchAlgorithmTest.depthFirstSearchResultTest9.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest10.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest3.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest4.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest5.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest6.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest7.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest8.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DepthFirstSearchAlgorithmTest.depthFirstSearchResultTest9.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DepthFirstSearchAlgorithmTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HoarePartitionAlgorithmTest.hoarePartitionResultTest2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.binSerachResultTest1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest10.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest11.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest12.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest13.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest14.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest15.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest16.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest3.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest4.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest5.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest6.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest7.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest8.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PartitionAlgorithmTest.partitionResultTest9.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QuickSortPartitionAlgorithmTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult3.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult4.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QuickSortPartitionAlgorithmTest.quickSortPartitionResult5.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StackSequenceAlgorithmTest.stackSequenceResultTest2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StackSequenceAlgorithmTest.stackSequenceResultTest3.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StackSequenceAlgorithmTest.stackSequenceResultTest4.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StackSequenceAlgorithmTest.stackSequenceResultTest5.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TraverseConverterAlgorithmTest.traverseConverterResultTest1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TraverseConverterAlgorithmTest.traverseConverterResultTest2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TraverseConverterAlgorithmTest.treeCheckerResultTest1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TreeCheckerAlgorithmTest.treeCheckerResultTest1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TreeCheckerAlgorithmTest.treeCheckerResultTest2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TreeCheckerAlgorithmTest.treeCheckerResultTest3.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TreeCheckerAlgorithmTest.treeCheckerResultTest4.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TreeCheckerAlgorithmTest.treeCheckerResultTest5.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TreeCheckerAlgorithmTest.treeCheckerResultTest6.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AlgorithmService [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.MicroWebASD [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AlgorithmServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AuthServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DiscoveryServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UseServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hubirto/Projects/MicroWebASD/web-ui/src/assets/fonts&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/hubirto/Projects/MicroWebASD/web-ui/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql",
-      "mongo",
-      "redis"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;mongo&quot;,
+      &quot;redis&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -258,11 +284,11 @@
       <recent name="C:\Users\Hubert\IdeaProjects\MicroWebASD\UseService" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="pl.pomoku.algorithmservice.algorithm" />
-      <recent name="pl.pomoku.algorithmservice.dto.output" />
-      <recent name="pl.pomoku.algorithmservice.dto.input" />
-      <recent name="pl.pomoku.algorithmservice.controller" />
       <recent name="pl.pomoku.algorithmservice.service" />
+      <recent name="pl.pomoku.algorithmservice.repository" />
+      <recent name="pl.pomoku.algorithmservice.entity" />
+      <recent name="pl.pomoku.algorithmservice.dto.input" />
+      <recent name="pl.pomoku.algorithmservice.dto.output" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -274,8 +300,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StackSequenceAlgorithmTest.stackSequenceResultTest5">
-    <configuration name="StackSequenceAlgorithmTest.binSerachResultTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.AlgorithmServiceApplication">
+    <configuration name="TraverseConverterAlgorithmTest.traverseConverterResultTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmService" />
       <extension name="coverage">
         <pattern>
@@ -284,14 +310,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.StackSequenceAlgorithmTest" />
-      <option name="METHOD_NAME" value="binSerachResultTest1" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.TraverseConverterAlgorithmTest" />
+      <option name="METHOD_NAME" value="traverseConverterResultTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackSequenceAlgorithmTest.stackSequenceResultTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TraverseConverterAlgorithmTest.traverseConverterResultTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmService" />
       <extension name="coverage">
         <pattern>
@@ -300,14 +326,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.StackSequenceAlgorithmTest" />
-      <option name="METHOD_NAME" value="stackSequenceResultTest2" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.TraverseConverterAlgorithmTest" />
+      <option name="METHOD_NAME" value="traverseConverterResultTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackSequenceAlgorithmTest.stackSequenceResultTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TraverseConverterAlgorithmTest.treeCheckerResultTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmService" />
       <extension name="coverage">
         <pattern>
@@ -316,14 +342,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.StackSequenceAlgorithmTest" />
-      <option name="METHOD_NAME" value="stackSequenceResultTest3" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.TraverseConverterAlgorithmTest" />
+      <option name="METHOD_NAME" value="treeCheckerResultTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackSequenceAlgorithmTest.stackSequenceResultTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TreeCheckerAlgorithmTest.treeCheckerResultTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmService" />
       <extension name="coverage">
         <pattern>
@@ -332,14 +358,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.StackSequenceAlgorithmTest" />
-      <option name="METHOD_NAME" value="stackSequenceResultTest4" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.TreeCheckerAlgorithmTest" />
+      <option name="METHOD_NAME" value="treeCheckerResultTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackSequenceAlgorithmTest.stackSequenceResultTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TreeCheckerAlgorithmTest.treeCheckerResultTest6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmService" />
       <extension name="coverage">
         <pattern>
@@ -348,8 +374,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.StackSequenceAlgorithmTest" />
-      <option name="METHOD_NAME" value="stackSequenceResultTest5" />
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.TreeCheckerAlgorithmTest" />
+      <option name="METHOD_NAME" value="treeCheckerResultTest6" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -393,11 +419,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.StackSequenceAlgorithmTest.stackSequenceResultTest2" />
-      <item itemvalue="JUnit.StackSequenceAlgorithmTest.stackSequenceResultTest3" />
-      <item itemvalue="JUnit.StackSequenceAlgorithmTest.stackSequenceResultTest4" />
-      <item itemvalue="JUnit.StackSequenceAlgorithmTest.stackSequenceResultTest5" />
-      <item itemvalue="JUnit.StackSequenceAlgorithmTest.binSerachResultTest1" />
+      <item itemvalue="JUnit.TreeCheckerAlgorithmTest.treeCheckerResultTest1" />
+      <item itemvalue="JUnit.TraverseConverterAlgorithmTest.traverseConverterResultTest1" />
+      <item itemvalue="JUnit.TraverseConverterAlgorithmTest.traverseConverterResultTest2" />
+      <item itemvalue="JUnit.TraverseConverterAlgorithmTest.treeCheckerResultTest1" />
+      <item itemvalue="JUnit.TreeCheckerAlgorithmTest.treeCheckerResultTest6" />
       <item itemvalue="Spring Boot.AlgorithmServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
@@ -405,11 +431,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StackSequenceAlgorithmTest.stackSequenceResultTest5" />
-        <item itemvalue="JUnit.StackSequenceAlgorithmTest.stackSequenceResultTest4" />
-        <item itemvalue="JUnit.StackSequenceAlgorithmTest.stackSequenceResultTest3" />
-        <item itemvalue="JUnit.StackSequenceAlgorithmTest.stackSequenceResultTest2" />
-        <item itemvalue="JUnit.StackSequenceAlgorithmTest.binSerachResultTest1" />
+        <item itemvalue="JUnit.TreeCheckerAlgorithmTest.treeCheckerResultTest1" />
+        <item itemvalue="JUnit.TraverseConverterAlgorithmTest.traverseConverterResultTest1" />
+        <item itemvalue="JUnit.TraverseConverterAlgorithmTest.traverseConverterResultTest2" />
+        <item itemvalue="JUnit.TraverseConverterAlgorithmTest.treeCheckerResultTest1" />
+        <item itemvalue="JUnit.TreeCheckerAlgorithmTest.treeCheckerResultTest6" />
       </list>
     </recent_temporary>
   </component>
@@ -488,7 +514,17 @@
       <workItem from="1716916183762" duration="10744000" />
       <workItem from="1717062884137" duration="2554000" />
       <workItem from="1717066960046" duration="801000" />
-      <workItem from="1717099800205" duration="1631000" />
+      <workItem from="1717099800205" duration="1696000" />
+      <workItem from="1717189079787" duration="2722000" />
+      <workItem from="1717335693848" duration="8000" />
+      <workItem from="1717340120688" duration="2000" />
+      <workItem from="1717346378005" duration="7834000" />
+      <workItem from="1717396513476" duration="2000" />
+      <workItem from="1717396533234" duration="4927000" />
+      <workItem from="1717421018108" duration="15294000" />
+      <workItem from="1717592983435" duration="510000" />
+      <workItem from="1717612189048" duration="1000" />
+      <workItem from="1717662003755" duration="6937000" />
     </task>
     <task id="LOCAL-00001" summary="Start work with UserService">
       <option name="closed" value="true" />
@@ -730,7 +766,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715203453460</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Add StackSequence with tests">
+      <option name="closed" value="true" />
+      <created>1717152598894</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1717152598894</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -748,8 +792,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Capturing invalid jwt token structure dont work" />
-    <MESSAGE value="Code refactor" />
     <MESSAGE value="Start Algorithm Service" />
     <MESSAGE value="Add README.md" />
     <MESSAGE value="Finish BinSearch" />
@@ -773,7 +815,9 @@
     <MESSAGE value="Save class DepthFirstSearch for safe" />
     <MESSAGE value="Finish DepthFirstSearch with tests in backend" />
     <MESSAGE value="Fix post mapping in controller for DepthFirstSearch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix post mapping in controller for DepthFirstSearch" />
+    <MESSAGE value="Add StackSequence with tests" />
+    <MESSAGE value="Add two new algorithms: StackSequence + TraverseConverter and repair issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add two new algorithms: StackSequence + TraverseConverter and repair issues" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

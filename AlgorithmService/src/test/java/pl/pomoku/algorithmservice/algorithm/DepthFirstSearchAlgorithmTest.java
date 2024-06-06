@@ -9,7 +9,7 @@ public class DepthFirstSearchAlgorithmTest {
 
     @Test
     public void depthFirstSearchResultTest1() {
-        int[][] graph = {
+        Integer[][] graph = {
                 {4, 5},
                 {3, 5, 6, 7},
                 {3},
@@ -29,7 +29,7 @@ public class DepthFirstSearchAlgorithmTest {
 
     @Test
     public void depthFirstSearchResultTest2() {
-        int[][] graph = {
+        Integer[][] graph = {
                 {2, 4},
                 {4, 5, 6},
                 {0, 4, 5},
@@ -49,7 +49,7 @@ public class DepthFirstSearchAlgorithmTest {
 
     @Test
     public void depthFirstSearchResultTest3() {
-        int[][] graph = {
+        Integer[][] graph = {
                 {2, 6},
                 {2, 4, 5, 6, 7},
                 {0, 1, 4, 5, 7},
@@ -69,7 +69,7 @@ public class DepthFirstSearchAlgorithmTest {
 
     @Test
     public void depthFirstSearchResultTest4() {
-        int[][] graph = {
+        Integer[][] graph = {
                 {1, 2, 3, 4, 5, 7},
                 {0, 3, 4},
                 {0, 5, 7},
@@ -89,7 +89,7 @@ public class DepthFirstSearchAlgorithmTest {
 
     @Test
     public void depthFirstSearchResultTest5() {
-        int[][] graph = {
+        Integer[][] graph = {
                 {1, 3, 6, 7},
                 {0, 2, 3, 5, 7},
                 {1, 5, 6},
@@ -109,7 +109,7 @@ public class DepthFirstSearchAlgorithmTest {
 
     @Test
     public void depthFirstSearchResultTest6() {
-        int[][] graph = {
+        Integer[][] graph = {
                 {1, 3, 5},
                 {0, 2, 3, 5, 6},
                 {1, 3, 4},
@@ -129,7 +129,7 @@ public class DepthFirstSearchAlgorithmTest {
 
     @Test
     public void depthFirstSearchResultTest7() {
-        int[][] graph = {
+        Integer[][] graph = {
                 {1, 2, 4, 5, 6, 7},
                 {0, 5},
                 {0, 5, 6, 7},
@@ -149,7 +149,7 @@ public class DepthFirstSearchAlgorithmTest {
 
     @Test
     public void depthFirstSearchResultTest8() {
-        int[][] graph = {
+        Integer[][] graph = {
                 {1, 2, 4, 7},
                 {0, 2, 4, 5},
                 {0, 1, 3, 7},
@@ -169,7 +169,7 @@ public class DepthFirstSearchAlgorithmTest {
 
     @Test
     public void depthFirstSearchResultTest9() {
-        int[][] graph = {
+        Integer[][] graph = {
                 {3, 7},
                 {5, 6, 7},
                 {4, 5, 6, 7},
@@ -189,7 +189,7 @@ public class DepthFirstSearchAlgorithmTest {
 
     @Test
     public void depthFirstSearchResultTest10() {
-        int[][] graph = {
+        Integer[][] graph = {
                 {4, 5, 6},
                 {2, 3, 5, 6},
                 {1, 3, 4, 6},

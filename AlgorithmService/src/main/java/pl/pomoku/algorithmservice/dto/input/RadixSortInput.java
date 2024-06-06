@@ -21,7 +21,7 @@ import pl.pomoku.algorithmservice.validators.ValidationOrder;
 public class RadixSortInput {
     @NotNullArray(groups = ValidationOrder.First.class)
     @NotEmptyArray(groups = ValidationOrder.Second.class)
-    private int[] arr;
+    private Integer[] arr;
     @NotNull(
             groups = ValidationOrder.First.class,
             message = "Radix Sort requires a not-null d value."

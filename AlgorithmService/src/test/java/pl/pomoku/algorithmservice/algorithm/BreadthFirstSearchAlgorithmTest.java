@@ -4,13 +4,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import pl.pomoku.algorithmservice.dto.output.FirstSearchOutput;
 
-import java.util.List;
-
 public class BreadthFirstSearchAlgorithmTest {
 
     @Test
     public void depthFirstSearchResultTest1() {
-        int[][] graph = {
+        Integer[][] graph = {
                 {1, 3, 5, 7},
                 {0, 2, 6},
                 {1, 4, 5, 6},

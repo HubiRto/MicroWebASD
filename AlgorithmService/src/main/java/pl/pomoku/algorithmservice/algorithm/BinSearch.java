@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BinSearch {
-    public static BinSearchOutput calculate(int[] arr, int x) {
+    public static BinSearchOutput calculate(Integer[] arr, int x) {
         int left = 0;
         int right = arr.length - 1;
         int comparisonsCount = 0;

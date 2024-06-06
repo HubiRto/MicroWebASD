@@ -19,5 +19,5 @@ import pl.pomoku.algorithmservice.validators.ValidationOrder;
 public class CountingSortInput {
     @NotNullArray(groups = ValidationOrder.First.class)
     @NotEmptyArray(groups = ValidationOrder.Second.class)
-    private int[] arr;
+    private Integer[] arr;
 }

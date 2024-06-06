@@ -10,7 +10,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class PartitionState {
-    private int[] arr;
+    private Integer[] arr;
     private int l;
     private int r;
     private int comparisonsCount;

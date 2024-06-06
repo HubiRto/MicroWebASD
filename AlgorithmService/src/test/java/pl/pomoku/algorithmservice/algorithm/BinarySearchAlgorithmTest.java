@@ -11,7 +11,7 @@ public class BinarySearchAlgorithmTest {
 
     @Test
     public void binSerachResultTest1() {
-        int[] arr = {0, 1, 2, 3, 6, 7, 9, 13, 14, 16, 19};
+        Integer[] arr = {0, 1, 2, 3, 6, 7, 9, 13, 14, 16, 19};
         BinSearchOutput output = BinSearch.calculate(arr, 0);
 
         Assertions.assertEquals(output.getComparisonsCount(), 5);
@@ -21,7 +21,7 @@ public class BinarySearchAlgorithmTest {
 
     @Test
     public void binSerachResultTest2() {
-        int[] arr = {1, 3, 6, 7, 9, 10, 12, 14, 15, 16, 17};
+        Integer[] arr = {1, 3, 6, 7, 9, 10, 12, 14, 15, 16, 17};
         BinSearchOutput output = BinSearch.calculate(arr, 10);
 
         Assertions.assertNotEquals(output.getComparisonsCount(), BinSearch.calculate(arr, 16).getComparisonsCount());
@@ -31,7 +31,7 @@ public class BinarySearchAlgorithmTest {
 
     @Test
     public void binSerachResultTest3() {
-        int[] arr = {1, 2, 4, 5, 6, 9, 10, 11, 12, 14, 19};
+        Integer[] arr = {1, 2, 4, 5, 6, 9, 10, 11, 12, 14, 19};
         BinSearchOutput output = BinSearch.calculate(arr, 4);
 
         Assertions.assertEquals(output.getComparisonsCount(), 3);
@@ -41,7 +41,7 @@ public class BinarySearchAlgorithmTest {
 
     @Test
     public void binSerachResultTest4() {
-        int[] arr = {0, 1, 2, 3, 5, 6, 9, 10, 11, 15, 18};
+        Integer[] arr = {0, 1, 2, 3, 5, 6, 9, 10, 11, 15, 18};
         BinSearchOutput output = BinSearch.calculate(arr, 5);
 
         Assertions.assertArrayEquals(output.getMArr().toArray(), List.of(5, 2, 3, 4).toArray());

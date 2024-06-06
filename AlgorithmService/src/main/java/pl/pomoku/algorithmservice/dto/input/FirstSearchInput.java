@@ -10,6 +10,6 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class FirstSearchInput {
-    private int[][] graph;
+    private Integer[][] graph;
     private int startIndex;
 }

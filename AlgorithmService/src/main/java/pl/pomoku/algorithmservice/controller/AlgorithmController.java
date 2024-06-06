@@ -3,25 +3,23 @@ package pl.pomoku.algorithmservice.controller;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-import pl.pomoku.algorithmservice.annotations.MeasureCalculationTime;
-import pl.pomoku.algorithmservice.dto.input.BinSearchInput;
-import pl.pomoku.algorithmservice.dto.input.HoarePartitionInput;
-import pl.pomoku.algorithmservice.dto.input.PartitionInput;
-import pl.pomoku.algorithmservice.service.BinSearchService;
-import pl.pomoku.algorithmservice.service.HoarePartitionService;
-import pl.pomoku.algorithmservice.service.PartitionService;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import pl.pomoku.algorithmservice.dto.input.*;
+import pl.pomoku.algorithmservice.service.*;
 
 @RestController
 @RequestMapping("/api/v1/algorithm")
 @RequiredArgsConstructor
-//@CrossOrigin(origins = "http://192.168.0.128:4200/")
 public class AlgorithmController {
     private final BinSearchService binSearchService;
     private final PartitionService partitionService;
     private final HoarePartitionService hoarePartitionService;
+    private final TraverseConverterService traverseConverterService;
+    private final TreeCheckerService treeCheckerService;
 
-    @MeasureCalculationTime
     @PostMapping("/binary-search")
     public ResponseEntity<?> binSearch(@Valid @RequestBody BinSearchInput input) {
         return ResponseEntity.ok(binSearchService.getResult(input).getResponse());
@@ -35,5 +33,20 @@ public class AlgorithmController {
     @PostMapping("/hoare-partition")
     public ResponseEntity<?> hoarePartition(@Valid @RequestBody HoarePartitionInput input) {
         return ResponseEntity.ok(hoarePartitionService.getResult(input).getResponse());
+    }
+
+    @PostMapping("/traverse-converter")
+    public ResponseEntity<?> traverseConverter(@Valid @RequestBody TraverseConverterInput input) {
+        return ResponseEntity.ok(traverseConverterService.getResult(input).getResponse());
+    }
+
+    @PostMapping("/stack-sequence")
+    public ResponseEntity<?> stackSequence(@Valid @RequestBody TraverseConverterInput input) {
+        return ResponseEntity.ok(traverseConverterService.getResult(input).getResponse());
+    }
+
+    @PostMapping("/tree-checker")
+    public ResponseEntity<?> treeChecker(@Valid @RequestBody TreeCheckerInput input) {
+        return ResponseEntity.ok(treeCheckerService.getResult(input).getResponse());
     }
 }

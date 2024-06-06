@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Partition {
-    public static PartitionOutput calculateWithOutput(int[] arr) {
+    public static PartitionOutput calculateWithOutput(Integer[] arr) {
         List<PartitionState> states = new ArrayList<>();
         int comparisonsCount = 0;
 
@@ -38,7 +38,7 @@ public class Partition {
         return calculateWithOutput(input.getArr());
     }
 
-    public static int calculate(int[] arr) {
+    public static int calculate(Integer[] arr) {
         int l = -1, r = 0, n = arr.length;
 
         while (r < n - 1) {

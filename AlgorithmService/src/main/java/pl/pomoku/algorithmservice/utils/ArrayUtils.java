@@ -15,13 +15,13 @@ public class ArrayUtils {
         return true;
     }
 
-    public static void swap(int[] arr, int i, int j) {
+    public static void swap(Integer[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
 
-    public static void assertArrayNotEquals(int[] arr1, int[] arr2) {
+    public static void assertArrayNotEquals(Integer[] arr1, Integer[] arr2) {
         assertFalse(Arrays.equals(arr1, arr2));
     }
 

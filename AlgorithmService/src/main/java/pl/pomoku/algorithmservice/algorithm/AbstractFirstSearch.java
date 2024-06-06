@@ -23,7 +23,7 @@ public abstract class AbstractFirstSearch {
         return calculate(input.getGraph(), input.getStartIndex());
     }
 
-    public FirstSearchOutput calculate(int[][] graph, int startVertexIdx) {
+    public FirstSearchOutput calculate(Integer[][] graph, int startVertexIdx) {
         this.vertices = initializeVertices(graph);
         this.startVertex = this.vertices.get(startVertexIdx);
 
@@ -77,7 +77,7 @@ public abstract class AbstractFirstSearch {
         }
     }
 
-    private List<Vertex<Integer>> initializeVertices(int[][] graph) {
+    private List<Vertex<Integer>> initializeVertices(Integer[][] graph) {
         List<Vertex<Integer>> vertices = new ArrayList<>();
         for (int i = 0; i < graph.length; i++) {
             vertices.add(new Vertex<>(i));

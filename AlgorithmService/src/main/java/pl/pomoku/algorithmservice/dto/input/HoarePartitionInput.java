@@ -8,7 +8,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import pl.pomoku.algorithmservice.annotations.NotEmptyArray;
 import pl.pomoku.algorithmservice.annotations.NotNullArray;
-import pl.pomoku.algorithmservice.annotations.SortedArray;
 import pl.pomoku.algorithmservice.validators.ValidationOrder;
 
 @Data
@@ -22,7 +21,7 @@ import pl.pomoku.algorithmservice.validators.ValidationOrder;
 public class HoarePartitionInput {
     @NotNullArray(groups = ValidationOrder.First.class)
     @NotEmptyArray(groups = ValidationOrder.Second.class)
-    private int[] arr;
+    private Integer[] arr;
     @NotNull(
             groups = ValidationOrder.Second.class,
             message = "HoarePartition requires a not-null k value."

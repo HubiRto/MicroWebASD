@@ -3,7 +3,6 @@ package pl.pomoku.algorithmservice.annotations;
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
 import pl.pomoku.algorithmservice.validators.SortedArrayValidator;
-import pl.pomoku.algorithmservice.validators.ValidationOrder;
 
 import java.lang.annotation.*;
 

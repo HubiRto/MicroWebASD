@@ -17,8 +17,8 @@ public class MergeSortOutput extends AbstractCalculationTime<MergeSortOutput> {
     private int mergeCount = 0;
     private int maxDepth = 0;
     private List<MergeSortStep> steps = new ArrayList<>();
-    private int[] sortedArray;
-    private int[] originalArray;
+    private Integer[] sortedArray;
+    private Integer[] originalArray;
 
     @Override
     protected MergeSortOutput getOutput() {
