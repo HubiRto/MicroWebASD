@@ -26,11 +26,11 @@ public class TraverseConverterAlgorithmTest {
         assertArrayNotEquals(convert(array, IN, POST), 11, 19, 6, 14, 2, 3, 15);
     }
 
-    private void assertArrayEquals(int[] actual, int... expected) {
+    private void assertArrayEquals(Integer[] actual, Integer... expected) {
         Assertions.assertArrayEquals(expected, actual);
     }
 
-    private void assertArrayNotEquals(int[] actual, int... expected) {
+    private void assertArrayNotEquals(Integer[] actual, Integer... expected) {
         Assertions.assertFalse(Arrays.equals(actual, expected));
     }
 }

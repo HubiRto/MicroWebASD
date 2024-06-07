@@ -9,7 +9,7 @@ public class TraverseConverter {
         return new TraverseConverterOutput(convert(input.getArr(), input.getFrom(), input.getTo()));
     }
 
-    public static int[] convert(Integer[] array, TraverseType from, TraverseType to) {
+    public static Integer[] convert(Integer[] array, TraverseType from, TraverseType to) {
         return to.traverse(from.build(array));
     }
 }

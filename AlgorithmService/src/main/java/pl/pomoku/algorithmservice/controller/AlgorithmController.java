@@ -19,6 +19,8 @@ public class AlgorithmController {
     private final HoarePartitionService hoarePartitionService;
     private final TraverseConverterService traverseConverterService;
     private final TreeCheckerService treeCheckerService;
+    private final StackSequenceService stackSequenceService;
+    private final BinarySearchTreeDestroyService binarySearchTreeDestroyService;
 
     @PostMapping("/binary-search")
     public ResponseEntity<?> binSearch(@Valid @RequestBody BinSearchInput input) {
@@ -41,12 +43,17 @@ public class AlgorithmController {
     }
 
     @PostMapping("/stack-sequence")
-    public ResponseEntity<?> stackSequence(@Valid @RequestBody TraverseConverterInput input) {
-        return ResponseEntity.ok(traverseConverterService.getResult(input).getResponse());
+    public ResponseEntity<?> stackSequence(@Valid @RequestBody StackSequenceInput input) {
+        return ResponseEntity.ok(stackSequenceService.getResult(input).getResponse());
     }
 
     @PostMapping("/tree-checker")
     public ResponseEntity<?> treeChecker(@Valid @RequestBody TreeCheckerInput input) {
         return ResponseEntity.ok(treeCheckerService.getResult(input).getResponse());
+    }
+
+    @PostMapping("/binary-serach-tree-destroy")
+    public ResponseEntity<?> binarySearchTreeDestroy(@Valid @RequestBody BinarySearchTreeDestroyInput input) {
+        return ResponseEntity.ok(binarySearchTreeDestroyService.getResult(input).getResponse());
     }
 }

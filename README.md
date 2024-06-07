@@ -28,7 +28,8 @@ Nasza aplikacja składa się z kilku kluczowych mikroserwisów:
 Oferujemy szeroki zakres algorytmów, w tym:
 - **Sortowanie**: QuickSort, MergeSort, InsertionSort, RadixSort, CountingSort
 - **Przeszukiwanie**: BinSearch, BreadthFirstSearch, DepthFirstSearch
-- **Inne**: Partition, HoarePartition, QuickSortPartition, StackSequence, (Post-Pre-In)-OrderConverter
+- **Drzewiaste**: TreeChecker, (Post-Pre-In)-OrderConverter, BSTDestroy
+- **Inne**: Partition, HoarePartition, QuickSortPartition, StackSequence
 
 ### 🛠️ Przykład Użycia
 Użytkownik wysyła zapytanie do API, które przekierowuje do Algorithm Service. Jeśli wynik już istnieje w bazie, jest natychmiast zwracany. W przeciwnym razie, algorytm jest przetwarzany, a wynik zapisywany i zwracany użytkownikowi.

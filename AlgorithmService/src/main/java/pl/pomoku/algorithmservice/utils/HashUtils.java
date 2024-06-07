@@ -12,9 +12,9 @@ import java.util.Objects;
 public class HashUtils {
 
     /**
-     * Generuje hash na podstawie tablicy intów.
+     * Generuje hash na podstawie tablicy Integerów.
      *
-     * @param array tablica intów
+     * @param array tablica Integerów
      * @return wygenerowany hash
      */
     public static int hash(Integer[] array) {
@@ -22,9 +22,9 @@ public class HashUtils {
     }
 
     /**
-     * Generuje hash na podstawie tablicy intów i pojedynczej wartości int.
+     * Generuje hash na podstawie tablicy Integerów i pojedynczej wartości int.
      *
-     * @param array tablica intów
+     * @param array tablica Integerów
      * @param value wartość int
      * @return wygenerowany hash
      */
@@ -56,10 +56,10 @@ public class HashUtils {
     }
 
     /**
-     * Generates a hash based on TraverseConverterInput.
+     * Generuje hash na podstawie instancji TraverseConverterInput.
      *
-     * @param input TraverseConverterInput instance
-     * @return generated hash
+     * @param input instancja TraverseConverterInput
+     * @return wygenerowany hash
      */
     public static int hash(TraverseConverterInput input) {
         int result = Arrays.hashCode(input.getArr());
@@ -69,31 +69,61 @@ public class HashUtils {
     }
 
     /**
-     * Generates a hash based on a Node instance.
+     * Generuje hash na podstawie instancji Node.
      *
-     * @param node the root node of the tree
-     * @return generated hash
+     * @param node korzeń drzewa
+     * @return wygenerowany hash
      */
-    public static int hash(Node node) {
+    public static int hash(Node<Integer> node) {
         if (node == null) {
             return 0;
         }
-        int result = Objects.hash(node.getValue());
+        int result = Objects.hash(node.getData());
         result = 31 * result + hash(node.getLeft());
         result = 31 * result + hash(node.getRight());
         return result;
     }
 
+    /**
+     * Generuje hash na podstawie instancji StackSequenceInput.
+     *
+     * @param input instancja StackSequenceInput
+     * @return wygenerowany hash
+     */
     public static int hash(StackSequenceInput input) {
         return Arrays.hashCode(input.getElements());
     }
 
+    /**
+     * Generuje hash na podstawie tablicy StackSequenceOperation.
+     *
+     * @param elements tablica StackSequenceOperation
+     * @return wygenerowany hash
+     */
     public static int hash(StackSequenceOperation[] elements) {
         return Arrays.hashCode(elements);
     }
 
+    /**
+     * Generuje hash na podstawie instancji StackSequenceOperation.
+     *
+     * @param element instancja StackSequenceOperation
+     * @return wygenerowany hash
+     */
     public static int hash(StackSequenceOperation element) {
         return Objects.hash(element.getType(), element.getValue(), element.getElement());
     }
-}
 
+    /**
+     * Generuje hash na podstawie dwóch tablic intów.
+     *
+     * @param array1 pierwsza tablica intów
+     * @param array2 druga tablica intów
+     * @return wygenerowany hash
+     */
+    public static int hash(Integer[] array1, Integer[] array2) {
+        int result = Arrays.hashCode(array1);
+        result = 31 * result + Arrays.hashCode(array2);
+        return result;
+    }
+}

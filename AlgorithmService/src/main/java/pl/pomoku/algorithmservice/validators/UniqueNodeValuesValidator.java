@@ -10,7 +10,7 @@ import pl.pomoku.algorithmservice.exception.AppException;
 import java.util.HashSet;
 import java.util.Set;
 
-public class UniqueNodeValuesValidator implements ConstraintValidator<UniqueNodeValues, Node> {
+public class UniqueNodeValuesValidator implements ConstraintValidator<UniqueNodeValues, Node<Integer>> {
     private String message;
 
     @Override
@@ -19,16 +19,17 @@ public class UniqueNodeValuesValidator implements ConstraintValidator<UniqueNode
     }
 
     @Override
-    public boolean isValid(Node root, ConstraintValidatorContext context) {
+    public boolean isValid(Node<Integer> root, ConstraintValidatorContext context) {
         Set<Integer> uniqueValues = new HashSet<>();
         return checkUniqueValues(root, uniqueValues);
     }
 
-    private boolean checkUniqueValues(Node node, Set<Integer> uniqueValues) {
+    private boolean checkUniqueValues(Node<Integer> node, Set<Integer> uniqueValues) {
         if (node == null) {
             return true;
+
         }
-        if (!uniqueValues.add(node.getValue())) {
+        if (!uniqueValues.add(node.getData())) {
             throw new AppException(message, HttpStatus.BAD_REQUEST);
         }
         return checkUniqueValues(node.getLeft(), uniqueValues) && checkUniqueValues(node.getRight(), uniqueValues);

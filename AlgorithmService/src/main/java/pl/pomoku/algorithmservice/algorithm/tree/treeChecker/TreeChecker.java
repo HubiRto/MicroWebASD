@@ -13,7 +13,7 @@ import java.util.Queue;
 
 @Getter
 public class TreeChecker {
-    private Node root;
+    private Node<Integer> root;
     private int maxLevel = 0;
 
     public TreeChecker(String data) {
@@ -40,7 +40,7 @@ public class TreeChecker {
 
     private void insertNode(int value, String path) {
         if (path.equals("RT")) {
-            this.root = new Node(value);
+            this.root = new Node<>(value);
             return;
         }
 
@@ -48,7 +48,7 @@ public class TreeChecker {
             maxLevel = path.length();
         }
 
-        Node current = this.root;
+        Node<Integer> current = this.root;
         for (int i = 0; i < path.length() - 1; i++) {
             if (current == null) {
                 throw new InvalidNodePathException("Parent node does not exist for path: " + path);
@@ -68,21 +68,21 @@ public class TreeChecker {
             if (current.getLeft() != null) {
                 throw new IllegalArgumentException("Node already exists on path: " + path);
             }
-            current.setLeft(new Node(value, path.length() - 1));
+            current.setLeft(new Node<>(value, path.length() - 1));
         } else if (path.charAt(path.length() - 1) == 'R') {
             if (current.getRight() != null) {
                 throw new IllegalArgumentException("Node already exists on path: " + path);
             }
-            current.setRight(new Node(value, path.length() - 1));
+            current.setRight(new Node<>(value, path.length() - 1));
         }
     }
 
-    public TreeChecker(Node root) {
+    public TreeChecker(Node<Integer> root) {
         this.root = root;
         assignLevels(this.root);
     }
 
-    private void assignLevels(Node root) {
+    private void assignLevels(Node<Integer> root) {
         if (root.getLeft() != null) {
             root.getLeft().setLevel(root.getLevel() + 1);
             if (root.getLeft().getLevel() > maxLevel) {
@@ -105,11 +105,11 @@ public class TreeChecker {
         TreeCheckerOutput output = new TreeCheckerOutput();
         output.setHeight(maxLevel);
 
-        Queue<Node> queue = new LinkedList<>();
+        Queue<Node<Integer>> queue = new LinkedList<>();
         queue.add(root);
 
         while (!queue.isEmpty()) {
-            Node current = queue.poll();
+            Node<Integer> current = queue.poll();
             if (current.getLeft() == null && current.getRight() == null) {
                 output.setExternalEdges(output.getExternalEdges() + 1);
             } else {
@@ -131,11 +131,11 @@ public class TreeChecker {
         return output;
     }
 
-    private static Node copyTree(Node root) {
+    private static Node<Integer> copyTree(Node<Integer> root) {
         if (root == null) {
             return null;
         }
-        Node newNode = new Node(root.getValue());
+        Node<Integer> newNode = new Node<>(root.getData());
         newNode.setLevel(root.getLevel());
         newNode.setLeft(copyTree(root.getLeft()));
         newNode.setRight(copyTree(root.getRight()));
@@ -146,7 +146,7 @@ public class TreeChecker {
         return isFullBinaryTree(this.root);
     }
 
-    private boolean isFullBinaryTree(Node node) {
+    private boolean isFullBinaryTree(Node<Integer> node) {
         if (node == null) return true;
         if (node.getLeft() == null && node.getRight() == null) return true;
         if (node.getLeft() != null && node.getRight() != null) {
@@ -159,15 +159,15 @@ public class TreeChecker {
         return isCompleteBinaryTree(this.root);
     }
 
-    private boolean isCompleteBinaryTree(Node node) {
+    private boolean isCompleteBinaryTree(Node<Integer> node) {
         if (node == null) return true;
 
-        Queue<Node> queue = new LinkedList<>();
+        Queue<Node<Integer>> queue = new LinkedList<>();
         queue.add(node);
         boolean flag = false;
 
         while (!queue.isEmpty()) {
-            Node temp = queue.poll();
+            Node<Integer> temp = queue.poll();
 
             if (temp.getLeft() != null) {
                 if (flag) return false;
@@ -191,15 +191,15 @@ public class TreeChecker {
         return isLeftCompleteBinaryTree(this.root);
     }
 
-    private boolean isLeftCompleteBinaryTree(Node node) {
+    private boolean isLeftCompleteBinaryTree(Node<Integer> node) {
         if (node == null) return true;
 
-        Queue<Node> queue = new LinkedList<>();
+        Queue<Node<Integer>> queue = new LinkedList<>();
         queue.add(node);
         boolean end = false;
 
         while (!queue.isEmpty()) {
-            Node temp = queue.poll();
+            Node<Integer> temp = queue.poll();
 
             if (temp.getLeft() != null) {
                 if (end) return false;
@@ -222,15 +222,15 @@ public class TreeChecker {
         return isRightCompleteBinaryTree(this.root);
     }
 
-    private boolean isRightCompleteBinaryTree(Node node) {
+    private boolean isRightCompleteBinaryTree(Node<Integer> node) {
         if (node == null) return true;
 
-        Queue<Node> queue = new LinkedList<>();
+        Queue<Node<Integer>> queue = new LinkedList<>();
         queue.add(node);
         boolean foundIncomplete = false;
 
         while (!queue.isEmpty()) {
-            Node current = queue.poll();
+            Node<Integer> current = queue.poll();
 
             if (current.getRight() != null) {
                 if (foundIncomplete) return false;
@@ -250,14 +250,14 @@ public class TreeChecker {
         return true;
     }
 
-    private void removeLastLevel(Node root, int level) {
+    private void removeLastLevel(Node<Integer> root, int level) {
         if (root == null) return;
 
-        Queue<Node> queue = new LinkedList<>();
+        Queue<Node<Integer>> queue = new LinkedList<>();
         queue.add(root);
 
         while (!queue.isEmpty()) {
-            Node temp = queue.poll();
+            Node<Integer> temp = queue.poll();
 
             if (temp.getLeft() != null) {
                 if (temp.getLeft().getLevel() == level) {

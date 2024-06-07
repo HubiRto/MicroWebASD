@@ -9,7 +9,7 @@ import pl.pomoku.algorithmservice.model.AbstractCalculationTime;
 @NoArgsConstructor
 @Getter
 public class TraverseConverterOutput extends AbstractCalculationTime<TraverseConverterOutput> {
-    private int[] result;
+    private Integer[] result;
 
     @Override
     protected TraverseConverterOutput getOutput() {

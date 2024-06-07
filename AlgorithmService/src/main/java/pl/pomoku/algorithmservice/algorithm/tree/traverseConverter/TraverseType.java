@@ -4,33 +4,33 @@ import lombok.AllArgsConstructor;
 import pl.pomoku.algorithmservice.algorithm.tree.Node;
 
 @AllArgsConstructor
-public enum TraverseType implements TraverseTypeAction {
+public enum TraverseType implements TraverseTypeAction<Integer> {
     PRE {
         @Override
-        public Node build(Integer[] array) {
+        public Node<Integer> build(Integer[] array) {
             return buildTreeFromPreOrder(array, new int[]{0}, 0, array.length - 1);
         }
 
         @Override
-        public int[] traverse(Node node) {
-            int[] result = new int[getSize(node)];
+        public Integer[] traverse(Node<Integer> node) {
+            Integer[] result = new Integer[getSize(node)];
             fillPreOrder(node, result, new int[]{0});
             return result;
         }
 
-        private void fillPreOrder(Node node, int[] array, int[] index) {
+        private void fillPreOrder(Node<Integer> node, Integer[] array, int[] index) {
             if (node == null) {
                 return;
             }
-            array[index[0]++] = node.getValue();
+            array[index[0]++] = node.getData();
             fillPreOrder(node.getLeft(), array, index);
             fillPreOrder(node.getRight(), array, index);
         }
 
-        private Node buildTreeFromPreOrder(Integer[] preOrder, int[] preIndex, int start, int end) {
+        private Node<Integer> buildTreeFromPreOrder(Integer[] preOrder, int[] preIndex, int start, int end) {
             if (start > end) return null;
 
-            Node root = new Node(preOrder[preIndex[0]++]);
+            Node<Integer> root = new Node<>(preOrder[preIndex[0]++]);
             if (start == end) return root;
 
             int leftSubtreeEnd = start + 1 + (end - start) / 2;
@@ -41,30 +41,30 @@ public enum TraverseType implements TraverseTypeAction {
     },
     POST {
         @Override
-        public Node build(Integer[] array) {
+        public Node<Integer> build(Integer[] array) {
             return buildTreeFromPostOrder(array, new int[]{array.length - 1}, 0, array.length - 1);
         }
 
         @Override
-        public int[] traverse(Node node) {
-            int[] result = new int[getSize(node)];
+        public Integer[] traverse(Node<Integer> node) {
+            Integer[] result = new Integer[getSize(node)];
             fillPostOrder(node, result, new int[]{0});
             return result;
         }
 
-        private void fillPostOrder(Node node, int[] array, int[] index) {
+        private void fillPostOrder(Node<Integer> node, Integer[] array, int[] index) {
             if (node == null) {
                 return;
             }
             fillPostOrder(node.getLeft(), array, index);
             fillPostOrder(node.getRight(), array, index);
-            array[index[0]++] = node.getValue();
+            array[index[0]++] = node.getData();
         }
 
-        private Node buildTreeFromPostOrder(Integer[] postOrder, int[] postIndex, int start, int end) {
+        private Node<Integer> buildTreeFromPostOrder(Integer[] postOrder, int[] postIndex, int start, int end) {
             if (start > end) return null;
 
-            Node root = new Node(postOrder[postIndex[0]--]);
+            Node<Integer> root = new Node<Integer>(postOrder[postIndex[0]--]);
             if (start == end) return root;
 
             int rightSubtreeStart = start + (end - start) / 2;
@@ -75,31 +75,31 @@ public enum TraverseType implements TraverseTypeAction {
     },
     IN {
         @Override
-        public Node build(Integer[] array) {
+        public Node<Integer> build(Integer[] array) {
             return buildTreeFromInOrder(array, 0, array.length - 1);
         }
 
         @Override
-        public int[] traverse(Node node) {
-            int[] result = new int[getSize(node)];
+        public Integer[] traverse(Node<Integer> node) {
+            Integer[] result = new Integer[getSize(node)];
             fillInOrder(node, result, new int[]{0});
             return result;
         }
 
-        private void fillInOrder(Node node, int[] array, int[] index) {
+        private void fillInOrder(Node<Integer> node, Integer[] array, int[] index) {
             if (node == null) {
                 return;
             }
             fillInOrder(node.getLeft(), array, index);
-            array[index[0]++] = node.getValue();
+            array[index[0]++] = node.getData();
             fillInOrder(node.getRight(), array, index);
         }
 
-        private Node buildTreeFromInOrder(Integer[] inOrder, int start, int end) {
+        private Node<Integer> buildTreeFromInOrder(Integer[] inOrder, int start, int end) {
             if (start > end) return null;
 
             int mid = start + (end - start) / 2;
-            Node root = new Node(inOrder[mid]);
+            Node<Integer> root = new Node<Integer>(inOrder[mid]);
 
             root.setLeft(buildTreeFromInOrder(inOrder, start, mid - 1));
             root.setRight(buildTreeFromInOrder(inOrder, mid + 1, end));
@@ -107,7 +107,7 @@ public enum TraverseType implements TraverseTypeAction {
         }
     };
 
-    private static int getSize(Node node) {
+    private static int getSize(Node<Integer> node) {
         if (node == null) {
             return 0;
         }

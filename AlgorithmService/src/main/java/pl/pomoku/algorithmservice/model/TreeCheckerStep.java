@@ -10,7 +10,7 @@ import pl.pomoku.algorithmservice.algorithm.tree.Node;
 @ToString
 public class TreeCheckerStep {
     private Integer removedLevel;
-    private Node tree;
+    private Node<Integer> tree;
     private boolean isFull;
     private boolean isRegular;
     private boolean isRightComplete;

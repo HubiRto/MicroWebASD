@@ -20,5 +20,5 @@ import pl.pomoku.algorithmservice.validators.ValidationOrder;
 public class TreeCheckerInput {
     @NonEmptyNodeValue(groups = ValidationOrder.First.class)
     @UniqueNodeValues(groups = ValidationOrder.Second.class)
-    private Node tree;
+    private Node<Integer> tree;
 }

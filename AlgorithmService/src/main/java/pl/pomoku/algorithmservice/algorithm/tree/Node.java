@@ -1,26 +1,26 @@
 package pl.pomoku.algorithmservice.algorithm.tree;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
+import org.springframework.data.annotation.Transient;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 @ToString
-public class Node {
-    private Integer value;
-    private Node left;
-    private Node right;
+public class Node<T extends Comparable<T>> {
+    private T data;
+    private Node<T> left;
+    private Node<T> right;
+    @Transient
     private Integer level = 0;
 
-    public Node(int value) {
-        this.value = value;
+    public Node(T data) {
+        this.data = data;
     }
 
-    public Node(int value, int level) {
-        this.value = value;
+    public Node(T data, int level) {
+        this.data = data;
         this.level = level;
     }
 
@@ -29,9 +29,9 @@ public class Node {
         print("", this, false);
     }
 
-    private void print(String prefix, Node node, boolean isLeft) {
+    private void print(String prefix, Node<T> node, boolean isLeft) {
         if (node != null) {
-            System.out.println(prefix + (isLeft ? "├── " : "└── ") + node.getValue());
+            System.out.println(prefix + (isLeft ? "├── " : "└── ") + node.getData());
             print(prefix + (isLeft ? "│   " : "    "), node.left, true);
             print(prefix + (isLeft ? "│   " : "    "), node.right, false);
         }

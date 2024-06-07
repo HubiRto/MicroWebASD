@@ -4,9 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Add three new algorithms: StackSequence + TraverseConverter + TreeChecker and repair the old issues">
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/ArrayUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/ArrayUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/SortedArrayValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/SortedArrayValidator.java" afterDir="false" />
+    <list default="true" id="6b4d9694-079a-4b30-aab1-94f4b2cb8d25" name="Changes" comment="Repair wrong type validator arg and some issue">
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/Tree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/bst/BinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/bst/BinarySearchTreeDestroy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/BinarySearchTreeDestroyInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/BinarySearchTreeDestroyOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/entity/BinarySearchTreeDestroyEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/repository/BinarySearchTreeDestroyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/service/BinarySearchTreeDestroyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/GenericTraversType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/404de221-5552-42d4-9ef9-270b024d1942.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/404de221-5552-42d4-9ef9-270b024d1942.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/traverseConverter/TraverseConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/traverseConverter/TraverseConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/traverseConverter/TraverseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/traverseConverter/TraverseType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/traverseConverter/TraverseTypeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/traverseConverter/TraverseTypeAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/treeChecker/TreeChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/algorithm/tree/treeChecker/TreeChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/AlgorithmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/controller/AlgorithmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/TreeCheckerInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/input/TreeCheckerInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/TraverseConverterOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/dto/output/TraverseConverterOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/TreeCheckerStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/model/TreeCheckerStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/HashUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/utils/HashUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/NonEmptyNodeValueValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/NonEmptyNodeValueValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/UniqueNodeValuesValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/main/java/pl/pomoku/algorithmservice/validators/UniqueNodeValuesValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/TraverseConverterAlgorithmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmService/src/test/java/pl/pomoku/algorithmservice/algorithm/TraverseConverterAlgorithmTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +89,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.BinSearch.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BinarySearchTree.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BstTree.executor&quot;: &quot;Run&quot;,
     &quot;Application.CountingSort.executor&quot;: &quot;Run&quot;,
     &quot;Application.DepthFirstSearch.executor&quot;: &quot;Run&quot;,
     &quot;Application.HoarePartition.executor&quot;: &quot;Run&quot;,
@@ -215,8 +240,8 @@
       <recent name="pl.pomoku.algorithmservice.service" />
       <recent name="pl.pomoku.algorithmservice.repository" />
       <recent name="pl.pomoku.algorithmservice.entity" />
-      <recent name="pl.pomoku.algorithmservice.dto.input" />
       <recent name="pl.pomoku.algorithmservice.dto.output" />
+      <recent name="pl.pomoku.algorithmservice.dto.input" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -229,6 +254,32 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.AlgorithmServiceApplication">
+    <configuration name="BinarySearchTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.tree.bst.BinarySearchTree" />
+      <module name="AlgorithmService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BstTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.tree.bst.BstTree" />
+      <module name="AlgorithmService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TraverseConverterAlgorithmTest.traverseConverterResultTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmService" />
       <extension name="coverage">
@@ -261,22 +312,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TraverseConverterAlgorithmTest.treeCheckerResultTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AlgorithmService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.TraverseConverterAlgorithmTest" />
-      <option name="METHOD_NAME" value="treeCheckerResultTest1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TreeCheckerAlgorithmTest.treeCheckerResultTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmService" />
       <extension name="coverage">
@@ -288,22 +323,6 @@
       <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
       <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.TreeCheckerAlgorithmTest" />
       <option name="METHOD_NAME" value="treeCheckerResultTest1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TreeCheckerAlgorithmTest.treeCheckerResultTest6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AlgorithmService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.pomoku.algorithmservice.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.pomoku.algorithmservice.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="pl.pomoku.algorithmservice.algorithm.TreeCheckerAlgorithmTest" />
-      <option name="METHOD_NAME" value="treeCheckerResultTest6" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -347,11 +366,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.BinarySearchTree" />
+      <item itemvalue="Application.BstTree" />
       <item itemvalue="JUnit.TreeCheckerAlgorithmTest.treeCheckerResultTest1" />
       <item itemvalue="JUnit.TraverseConverterAlgorithmTest.traverseConverterResultTest1" />
       <item itemvalue="JUnit.TraverseConverterAlgorithmTest.traverseConverterResultTest2" />
-      <item itemvalue="JUnit.TraverseConverterAlgorithmTest.treeCheckerResultTest1" />
-      <item itemvalue="JUnit.TreeCheckerAlgorithmTest.treeCheckerResultTest6" />
       <item itemvalue="Spring Boot.AlgorithmServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
@@ -359,11 +378,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinarySearchTree" />
+        <item itemvalue="Application.BstTree" />
         <item itemvalue="JUnit.TreeCheckerAlgorithmTest.treeCheckerResultTest1" />
         <item itemvalue="JUnit.TraverseConverterAlgorithmTest.traverseConverterResultTest1" />
         <item itemvalue="JUnit.TraverseConverterAlgorithmTest.traverseConverterResultTest2" />
-        <item itemvalue="JUnit.TraverseConverterAlgorithmTest.treeCheckerResultTest1" />
-        <item itemvalue="JUnit.TreeCheckerAlgorithmTest.treeCheckerResultTest6" />
       </list>
     </recent_temporary>
   </component>
@@ -452,7 +471,10 @@
       <workItem from="1717421018108" duration="15294000" />
       <workItem from="1717592983435" duration="510000" />
       <workItem from="1717612189048" duration="1000" />
-      <workItem from="1717662003755" duration="7536000" />
+      <workItem from="1717662003755" duration="8908000" />
+      <workItem from="1717674386900" duration="1689000" />
+      <workItem from="1717705598536" duration="12646000" />
+      <workItem from="1717742967703" duration="2446000" />
     </task>
     <task id="LOCAL-00001" summary="Start work with UserService">
       <option name="closed" value="true" />
@@ -710,7 +732,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717670585913</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Repair wrong type validator arg and some issue">
+      <option name="closed" value="true" />
+      <created>1717670946902</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1717670946902</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -728,7 +758,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add README.md" />
     <MESSAGE value="Finish BinSearch" />
     <MESSAGE value="Add test to BinSearch" />
     <MESSAGE value="Finish Partition Algorithm" />
@@ -753,7 +782,8 @@
     <MESSAGE value="Add StackSequence with tests" />
     <MESSAGE value="Add two new algorithms: StackSequence + TraverseConverter and repair issues" />
     <MESSAGE value="Add three new algorithms: StackSequence + TraverseConverter + TreeChecker and repair the old issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add three new algorithms: StackSequence + TraverseConverter + TreeChecker and repair the old issues" />
+    <MESSAGE value="Repair wrong type validator arg and some issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repair wrong type validator arg and some issue" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
