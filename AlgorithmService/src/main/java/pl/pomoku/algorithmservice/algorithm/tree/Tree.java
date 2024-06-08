@@ -29,5 +29,7 @@ public interface Tree<T extends Comparable<T>> {
         return countExternal(node.getLeft()) + countExternal(node.getRight());
     }
     int height();
+    int size();
+    boolean contains(T data);
     void print();
 }

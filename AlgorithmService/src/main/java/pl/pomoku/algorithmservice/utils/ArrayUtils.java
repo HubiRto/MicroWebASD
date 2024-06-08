@@ -21,8 +21,8 @@ public class ArrayUtils {
         arr[j] = temp;
     }
 
-    public static void assertArrayNotEquals(Integer[] arr1, Integer[] arr2) {
-        assertFalse(Arrays.equals(arr1, arr2));
+    public static void assertArrayNotEquals(Integer[] unexpected, Integer[] actual) {
+        assertFalse(Arrays.equals(unexpected, actual));
     }
 
     public static int[] listToArray(List<Integer> list) {

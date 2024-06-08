@@ -21,6 +21,7 @@ public class AlgorithmController {
     private final TreeCheckerService treeCheckerService;
     private final StackSequenceService stackSequenceService;
     private final BinarySearchTreeDestroyService binarySearchTreeDestroyService;
+    private final BinarySearchTreeSequenceService binarySearchTreeSequenceService;
 
     @PostMapping("/binary-search")
     public ResponseEntity<?> binSearch(@Valid @RequestBody BinSearchInput input) {
@@ -55,5 +56,10 @@ public class AlgorithmController {
     @PostMapping("/binary-serach-tree-destroy")
     public ResponseEntity<?> binarySearchTreeDestroy(@Valid @RequestBody BinarySearchTreeDestroyInput input) {
         return ResponseEntity.ok(binarySearchTreeDestroyService.getResult(input).getResponse());
+    }
+
+    @PostMapping("/binary-serach-tree-sequence")
+    public ResponseEntity<?> binarySearchTreeSequence(@Valid @RequestBody BinarySearchTreeSequenceInput input) {
+        return ResponseEntity.ok(binarySearchTreeSequenceService.getResult(input).getResponse());
     }
 }

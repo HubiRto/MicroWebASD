@@ -2,6 +2,8 @@ package pl.pomoku.algorithmservice.utils;
 
 import pl.pomoku.algorithmservice.algorithm.stackSequence.StackSequenceOperation;
 import pl.pomoku.algorithmservice.algorithm.tree.Node;
+import pl.pomoku.algorithmservice.algorithm.tree.bst.BinarySearchTreeSequenceOperation;
+import pl.pomoku.algorithmservice.dto.input.BinarySearchTreeSequenceInput;
 import pl.pomoku.algorithmservice.dto.input.StackSequenceInput;
 import pl.pomoku.algorithmservice.dto.input.TraverseConverterInput;
 
@@ -124,6 +126,47 @@ public class HashUtils {
     public static int hash(Integer[] array1, Integer[] array2) {
         int result = Arrays.hashCode(array1);
         result = 31 * result + Arrays.hashCode(array2);
+        return result;
+    }
+
+    /**
+     * Generuje hash na podstawie instancji BinarySearchTreeSequenceOperation.
+     *
+     * @param operation instancja BinarySearchTreeSequenceOperation
+     * @return wygenerowany hash
+     */
+    public static int hash(BinarySearchTreeSequenceOperation operation) {
+        if (operation == null) {
+            return 0;
+        }
+        int result = Objects.hash(operation.getType(), operation.getValue());
+        result = 31 * result + hash(operation.getChild());
+        return result;
+    }
+
+    /**
+     * Generuje hash na podstawie tablicy BinarySearchTreeSequenceOperation.
+     *
+     * @param operations tablica BinarySearchTreeSequenceOperation
+     * @return wygenerowany hash
+     */
+    public static int hash(BinarySearchTreeSequenceOperation[] operations) {
+        return Arrays.hashCode(
+                Arrays.stream(operations)
+                        .mapToInt(HashUtils::hash)
+                        .toArray()
+        );
+    }
+
+    /**
+     * Generuje hash na podstawie instancji BinarySearchTreeSequenceInput.
+     *
+     * @param input instancja BinarySearchTreeSequenceInput
+     * @return wygenerowany hash
+     */
+    public static int hash(BinarySearchTreeSequenceInput input) {
+        int result = Arrays.hashCode(input.getInitArray());
+        result = 31 * result + hash(input.getOperations());
         return result;
     }
 }

@@ -118,4 +118,26 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
         int rightHeight = height(node.getRight());
         return Math.max(leftHeight, rightHeight) + 1;
     }
+
+    @Override
+    public int size() {
+        return size(root);
+    }
+
+    private int size(Node<T> node) {
+        if (node == null) return 0;
+        return 1 + size(node.getLeft()) + size(node.getRight());
+    }
+
+    @Override
+    public boolean contains(T data) {
+        return contains(data, root);
+    }
+
+    private boolean contains(T data, Node<T> node) {
+        if (node == null) return false;
+        if (data.compareTo(node.getData()) == 0) return true;
+        if (data.compareTo(node.getData()) < 0) return contains(data, node.getLeft());
+        return contains(data, node.getRight());
+    }
 }

@@ -5,7 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import pl.pomoku.algorithmservice.algorithm.tree.bst.BinarySearchTreeSequenceOperation;
 import pl.pomoku.algorithmservice.annotations.NotEmptyArray;
+import pl.pomoku.algorithmservice.annotations.NotEmptyChildMemberOperation;
 import pl.pomoku.algorithmservice.annotations.NotNullArray;
 import pl.pomoku.algorithmservice.validators.ValidationOrder;
 
@@ -15,14 +17,16 @@ import pl.pomoku.algorithmservice.validators.ValidationOrder;
 @GroupSequence({
         ValidationOrder.First.class,
         ValidationOrder.Second.class,
-        BinarySearchTreeDestroyInput.class
+        ValidationOrder.Third.class,
+        BinarySearchTreeSequenceInput.class
 })
 @Builder
-public class BinarySearchTreeDestroyInput {
+public class BinarySearchTreeSequenceInput {
     @NotNullArray(groups = ValidationOrder.First.class)
     @NotEmptyArray(groups = ValidationOrder.Second.class)
     private Integer[] initArray;
     @NotNullArray(groups = ValidationOrder.First.class)
     @NotEmptyArray(groups = ValidationOrder.Second.class)
-    private Integer[] removeArray;
+    @NotEmptyChildMemberOperation(groups = ValidationOrder.Third.class)
+    private BinarySearchTreeSequenceOperation[] operations;
 }
