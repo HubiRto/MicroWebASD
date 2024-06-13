@@ -28,7 +28,7 @@ Nasza aplikacja składa się z kilku kluczowych mikroserwisów:
 Oferujemy szeroki zakres algorytmów, w tym:
 - **Sortowanie**: QuickSort, MergeSort, InsertionSort, RadixSort, CountingSort
 - **Przeszukiwanie**: BinSearch, BreadthFirstSearch, DepthFirstSearch
-- **Drzewiaste**: TreeChecker, (Post-Pre-In)-OrderConverter, BSTDestroy, BSTSequence
+- **Drzewiaste**: TreeChecker, (Post-Pre-In)-OrderConverter, BSTDestroy, BSTSequence, AVLSequence
 - **Inne**: Partition, HoarePartition, QuickSortPartition, StackSequence
 
 ### 🛠️ Przykład Użycia
