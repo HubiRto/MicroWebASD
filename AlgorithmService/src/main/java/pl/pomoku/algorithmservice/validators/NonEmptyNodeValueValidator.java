@@ -17,12 +17,10 @@ public class NonEmptyNodeValueValidator implements ConstraintValidator<NonEmptyN
 
     @Override
     public boolean isValid(Node<Integer> node, ConstraintValidatorContext context) {
-//        System.out.println(node);
         if(node == null) {
             return true;
         }
         if (node.getData() == null) {
-//            System.out.println(node);
             throw new AppException(message, HttpStatus.BAD_REQUEST);
         }
 

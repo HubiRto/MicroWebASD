@@ -6,10 +6,7 @@ import pl.pomoku.algorithmservice.dto.output.TreeCheckerOutput;
 import pl.pomoku.algorithmservice.exception.InvalidNodePathException;
 import pl.pomoku.algorithmservice.model.TreeCheckerStep;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 @Getter
 public class TreeChecker {
@@ -139,6 +136,7 @@ public class TreeChecker {
         newNode.setLevel(root.getLevel());
         newNode.setLeft(copyTree(root.getLeft()));
         newNode.setRight(copyTree(root.getRight()));
+
         return newNode;
     }
 

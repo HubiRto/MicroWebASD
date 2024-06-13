@@ -2,10 +2,10 @@ package pl.pomoku.algorithmservice.utils;
 
 import pl.pomoku.algorithmservice.algorithm.stackSequence.StackSequenceOperation;
 import pl.pomoku.algorithmservice.algorithm.tree.Node;
-import pl.pomoku.algorithmservice.algorithm.tree.bst.BinarySearchTreeSequenceOperation;
-import pl.pomoku.algorithmservice.dto.input.BinarySearchTreeSequenceInput;
+import pl.pomoku.algorithmservice.algorithm.tree.TreeSequenceOperation;
 import pl.pomoku.algorithmservice.dto.input.StackSequenceInput;
 import pl.pomoku.algorithmservice.dto.input.TraverseConverterInput;
+import pl.pomoku.algorithmservice.dto.input.TreeSequenceInput;
 
 import java.util.Arrays;
 import java.util.List;
@@ -129,13 +129,7 @@ public class HashUtils {
         return result;
     }
 
-    /**
-     * Generuje hash na podstawie instancji BinarySearchTreeSequenceOperation.
-     *
-     * @param operation instancja BinarySearchTreeSequenceOperation
-     * @return wygenerowany hash
-     */
-    public static int hash(BinarySearchTreeSequenceOperation operation) {
+    public static int hash(TreeSequenceOperation<Integer> operation) {
         if (operation == null) {
             return 0;
         }
@@ -144,13 +138,7 @@ public class HashUtils {
         return result;
     }
 
-    /**
-     * Generuje hash na podstawie tablicy BinarySearchTreeSequenceOperation.
-     *
-     * @param operations tablica BinarySearchTreeSequenceOperation
-     * @return wygenerowany hash
-     */
-    public static int hash(BinarySearchTreeSequenceOperation[] operations) {
+    public static int hash(TreeSequenceOperation<Integer>[] operations) {
         return Arrays.hashCode(
                 Arrays.stream(operations)
                         .mapToInt(HashUtils::hash)
@@ -158,13 +146,7 @@ public class HashUtils {
         );
     }
 
-    /**
-     * Generuje hash na podstawie instancji BinarySearchTreeSequenceInput.
-     *
-     * @param input instancja BinarySearchTreeSequenceInput
-     * @return wygenerowany hash
-     */
-    public static int hash(BinarySearchTreeSequenceInput input) {
+    public static int hash(TreeSequenceInput<Integer> input) {
         int result = Arrays.hashCode(input.getInitArray());
         result = 31 * result + hash(input.getOperations());
         return result;

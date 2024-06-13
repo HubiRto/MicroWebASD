@@ -22,6 +22,7 @@ public class AlgorithmController {
     private final StackSequenceService stackSequenceService;
     private final BinarySearchTreeDestroyService binarySearchTreeDestroyService;
     private final BinarySearchTreeSequenceService binarySearchTreeSequenceService;
+    private final AVLTreeSequenceService avlTreeSequenceService;
 
     @PostMapping("/binary-search")
     public ResponseEntity<?> binSearch(@Valid @RequestBody BinSearchInput input) {
@@ -61,5 +62,10 @@ public class AlgorithmController {
     @PostMapping("/binary-serach-tree-sequence")
     public ResponseEntity<?> binarySearchTreeSequence(@Valid @RequestBody BinarySearchTreeSequenceInput input) {
         return ResponseEntity.ok(binarySearchTreeSequenceService.getResult(input).getResponse());
+    }
+
+    @PostMapping("/avl-tree-sequence")
+    public ResponseEntity<?> avlTreeSequence(@Valid @RequestBody AVLTreeSequenceInput input) {
+        return ResponseEntity.ok(avlTreeSequenceService.getResult(input).getResponse());
     }
 }

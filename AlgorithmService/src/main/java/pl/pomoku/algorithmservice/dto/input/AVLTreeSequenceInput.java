@@ -5,4 +5,4 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public class BinarySearchTreeSequenceInput extends TreeSequenceInput<Integer> {}
+public class AVLTreeSequenceInput extends TreeSequenceInput<Integer> {}

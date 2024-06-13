@@ -2,12 +2,12 @@ package pl.pomoku.algorithmservice.algorithm;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import pl.pomoku.algorithmservice.algorithm.tree.TreeSequenceOperation;
+import pl.pomoku.algorithmservice.algorithm.tree.TreeSequenceOperationType;
 import pl.pomoku.algorithmservice.algorithm.tree.bst.BinarySearchTreeSequence;
-import pl.pomoku.algorithmservice.algorithm.tree.bst.BinarySearchTreeSequenceOperation;
-import pl.pomoku.algorithmservice.algorithm.tree.bst.BinarySearchTreeSequenceOperationType;
 import pl.pomoku.algorithmservice.dto.output.BinarySearchTreeSequenceOutput;
 
-import static pl.pomoku.algorithmservice.algorithm.tree.bst.BinarySearchTreeSequenceOperationType.*;
+import static pl.pomoku.algorithmservice.algorithm.tree.TreeSequenceOperationType.*;
 
 public class BinarySearchTreeSequenceAlgorithmTest {
 
@@ -82,33 +82,33 @@ public class BinarySearchTreeSequenceAlgorithmTest {
         Assertions.assertNotEquals(8, output.getTreeElementsSize());
     }
 
-    private BinarySearchTreeSequenceOperation memberWithInsert(int member, int insert) {
+    private TreeSequenceOperation<Integer> memberWithInsert(int member, int insert) {
         return memberWith(member, INSERT, insert);
     }
 
-    private BinarySearchTreeSequenceOperation memberWithDelete(int member, int delete) {
+    private TreeSequenceOperation<Integer> memberWithDelete(int member, int delete) {
         return memberWith(member, DELETE, delete);
     }
 
-    private BinarySearchTreeSequenceOperation memberWith(int member, BinarySearchTreeSequenceOperationType type, int number) {
-        return new BinarySearchTreeSequenceOperation(MEMBER, member,
-                new BinarySearchTreeSequenceOperation(type, number, null)
+    private TreeSequenceOperation<Integer> memberWith(int member, TreeSequenceOperationType type, int number) {
+        return new TreeSequenceOperation<>(MEMBER,
+                new TreeSequenceOperation<>(type, null, number), member
         );
     }
 
-    private BinarySearchTreeSequenceOperation delete(int delete) {
-        return new BinarySearchTreeSequenceOperation(DELETE, delete, null);
+    private TreeSequenceOperation<Integer> delete(int delete) {
+        return new TreeSequenceOperation<>(DELETE, null, delete);
     }
 
-    private BinarySearchTreeSequenceOperation delete(int delete, BinarySearchTreeSequenceOperation operation) {
-        return new BinarySearchTreeSequenceOperation(DELETE, delete, operation);
+    private TreeSequenceOperation<Integer> delete(int delete, TreeSequenceOperation<Integer> operation) {
+        return new TreeSequenceOperation<>(DELETE, operation, delete);
     }
 
-    private BinarySearchTreeSequenceOperation insert(int insert) {
-        return new BinarySearchTreeSequenceOperation(INSERT, insert, null);
+    private TreeSequenceOperation<Integer> insert(int insert) {
+        return new TreeSequenceOperation<>(INSERT, null, insert);
     }
 
-    private BinarySearchTreeSequenceOperation insert(int insert, BinarySearchTreeSequenceOperation operation) {
-        return new BinarySearchTreeSequenceOperation(INSERT, insert, operation);
+    private TreeSequenceOperation<Integer> insert(int insert, TreeSequenceOperation<Integer> operation) {
+        return new TreeSequenceOperation<>(INSERT, operation, insert);
     }
 }
